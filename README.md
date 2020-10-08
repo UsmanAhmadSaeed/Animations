@@ -1,0 +1,21 @@
+# CSS-Animations
+An open souorce collection of css animations, from loaders, to menus, and scroll transitions
+
+
+## Contributing Guidelines
+
+To contribute to this repository:
+
+Fork the repo.
+Create a new folder in relevant directory, with appropriate name.
+Add your animation files.
+Create a PR with proper title and description.
+
+## Rules
+
+By contributing to this repository, you give everyone right to use your code as needed.
+Be helpful and friendly.
+
+## Status
+
+Help needed in defining better guidelines, rules and creating a site to showcase projects. Please feel free to contribute.
