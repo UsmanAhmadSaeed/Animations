@@ -1,4 +1,5 @@
 # CSS-Animations
+## Menu Animations
 An open source collection of css animations, from loaders, to menus, and scroll transitions.
 
 
