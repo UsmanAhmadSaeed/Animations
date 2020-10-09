@@ -1,0 +1,91 @@
+/* Center the content */
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+/* Loader */
+#loader {
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    -webkit-animation: expand 1.7s linear infinite;
+    animation: expand 1.7s linear infinite;
+    }
+#loader1 {
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    -webkit-animation: expand1 1.7s linear infinite;
+    animation: expand1 1.7s linear infinite;
+    animation-delay: .9s;
+    }
+#c1 {
+    position: absolute;
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    border: 7px solid cyan;
+    border-radius: 50%;
+    }
+@-webkit-keyframes expand {
+    from {
+        -webkit-transform: scale(1); 
+        }
+    to { 
+        -webkit-transform: scale(6);opacity: 0; 
+        }
+    }
+@keyframes expand {
+    from {
+        transform: scale(1); 
+        }
+    to { 
+        transform: scale(6);opacity: 0; 
+        }
+    }
+@-webkit-keyframes expand1 {
+    from {
+        -webkit-transform: scale(1); 
+        }
+    to { 
+        -webkit-transform: scale(6);opacity: 0; 
+        }
+    }
+@keyframes expand1 {
+    from {
+        transform: scale(1); 
+        }
+    to { 
+        transform: scale(6);opacity: 0; 
+        }
+    }
+    
+/* Animate to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    }
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+    }
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+    }
+#page-body {
+    display: none;
+    text-align: center;
+    }
