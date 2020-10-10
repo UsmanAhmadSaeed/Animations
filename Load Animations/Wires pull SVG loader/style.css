@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+}
+
+#loader {
+  z-index: 99;
+  background: #ebe1dd;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+}
+#loader .path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 15px;
+}
+#loader #main {
+  animation: line 2s;
+  animation-delay: 0.5s;
+  animation-timing-function: easeout;
+  animation-fill-mode: forwards;
+  stroke: #803549;
+}
+#loader #shadow {
+  animation: line 2s;
+  transition-delay: 0.5s;
+  animation-timing-function: easeout;
+  animation-fill-mode: forwards;
+  stroke: #f7514c;
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
