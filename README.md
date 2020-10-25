@@ -17,8 +17,21 @@ To contribute to this repository:
 * Be helpful and friendly.
 
 ## Animation Links
-* [Jumping Dots Loader](https://animations.gq/Load%20Animations/Jumping%20Dots%20Loader/index.html)
+
+### Click Animations
+
+* [Big Button](https://animations.gq/Click%20Animations/big-button/index.html)
+
+### Hover Animations
+
+* [Flip Animation on Hover](https://animations.gq/Hover%20Animations/Flip%20Animation%20on%20Hover/index.html)
+
+### Load Animations
+
 * [Expanding Circle Loader](https://animations.gq/Load%20Animations/Expanding%20Circle%20Loader/index.html)
+* [Jumping Dots Loader](https://animations.gq/Load%20Animations/Jumping%20Dots%20Loader/index.html)
+* [Rotating Circle Loader Simple](https://animations.gq/Load%20Animations/Rotating%20Circle%20Loader%20Simple/index.html)
+* [Wires Pull SVG Loader](https://animations.gq/Load%20Animations/Wires%20pull%20SVG%20loader/index.html)
 
 ## Status
 
