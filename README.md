@@ -17,7 +17,7 @@ To contribute to this repository:
 * Be helpful and friendly.
 
 ## Animation Links
-* [Jumping Dots Loader](https://animations.gq/Load Animations/Jumping Dots Loader/index.html)
+* [Jumping Dots Loader](https://animations.gq/Load%20Animations/Jumping%20Dots%20Loader/index.html)
 
 ## Status
 
