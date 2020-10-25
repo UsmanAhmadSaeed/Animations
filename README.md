@@ -1,4 +1,4 @@
-# Animations
+### Animations
 An open source collection of coded animations, from loaders, to menus, and scroll transitions and much more.
 
 
@@ -15,6 +15,9 @@ To contribute to this repository:
 
 * By contributing to this repository, you give everyone right to use your code as needed.
 * Be helpful and friendly.
+
+## Animation Links
+* [Jumping Dots Loader](https://animations.gq/Load Animations/Jumping Dots Loader/index.html)
 
 ## Status
 
