@@ -34,24 +34,6 @@ Animations is an open source collection of coded animations from loaders to menu
 
 Here are a few of the examples that are currently in our collection:
 
--   **Big Button**: an enter button that when clicked animates a ripple effect
-
-> Try clicking the button to see what happens!
-
-<iframe src="https://animations.gq/Click%20Animations/big-button/index.html" title="W3Schools Free Online Web Tutorials" height="300px" width="500px">
-
--   **Simple Rotating Circle Loader**: circle loader that appears before a message
-
-> **Note**: try refreshing the page if you do not see the animation
-
-<iframe src="https://animations.gq/Load%20Animations/Rotating%20Circle%20Loader%20Simple/index.html" title="W3Schools Free Online Web Tutorials" height="300px" width="500px" allow="autoplay">
-
--   **Jumping Dots Loader**: card that when hovered over flips from front to back
-
-<iframe src="https://animations.gq/Load%20Animations/Jumping%20Dots%20Loader/index.html" title="W3Schools Free Online Web Tutorials" height="300px" width="500px" scrolling="no">
-
-Here is a full list of the current animations:
-
 ### Click Animations
 
 -   [Big Button](https://animations.gq/Click%20Animations/big-button/index.html)
