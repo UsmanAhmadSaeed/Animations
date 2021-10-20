@@ -12,9 +12,9 @@ Provided below is a set of guidelines and tips for how to get started as a contr
 
 [Before Getting Started](#before-getting-started)
 
-[How To Contribute](#before-getting-started)
+[How To Contribute](#how-to-contribute)
 
-[Style Guidelines](#before-getting-started)
+[Style Guidelines](#style-guidelines)
 
 ## Code of Conduct
 
