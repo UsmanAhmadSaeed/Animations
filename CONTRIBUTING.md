@@ -8,7 +8,7 @@ Provided below is a set of guidelines and tips for how to get started as a contr
 
 [Code of Conduct](#code-of-conduct)
 
-[I just have a question!](#I-just-have-a-question-!)
+[Submitting A Question](#submitting-a-question)
 
 [Before Getting Started](#before-getting-started)
 
@@ -22,9 +22,9 @@ Please refrain from inappropriate or offensive language, sexualized imagery, sla
 
 As a general guiding principle, we simply ask that participants be helpful and friendly. In addition, they should gratefully accept constructive criticism and focus on what is best for the wider community.
 
-## I just have a question!
+## Submitting A Question
 
-Great! Please either make an issue or write an message in our Discord Bot/Slack Channel.
+Please either make an issue or write an message in our Discord Bot/Slack Channel.
 
 ## Before Getting Started
 
