@@ -38,6 +38,10 @@ To contribute to this repository:
 * [Rotating Circle Loader Simple](https://animations.gq/Load%20Animations/Rotating%20Circle%20Loader%20Simple/index.html)
 * [Wires Pull SVG Loader](https://animations.gq/Load%20Animations/Wires%20pull%20SVG%20loader/index.html)
 
+### Form Animations
+
+* [Login Person](https://animations.gq/Form%20Animations/form/index.html)
+
 ## Status
 
 Help needed in defining better guidelines, rules and creating a site to showcase projects. Please feel free to contribute.
