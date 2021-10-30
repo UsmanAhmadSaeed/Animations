@@ -6,10 +6,15 @@ An open source collection of coded animations, from loaders, to menus, and scrol
 
 To contribute to this repository:
 
-* Fork the repo.
+* Create a personal fork of the project on Github. In other words, fork the repository or project.
+* Clone the fork on your local machine.
+* Create a new branch to work on.
 * Create a new folder in relevant directory, with appropriate name.
 * Add your animation/design files.
+* Add or change the documentation as needed.
+* Commit to your changes and push your branch to your fork on Github, the remote origin.
 * Create a PR with proper title and description.
+* Once the pull request is approved and merged you can pull the changes from upstream to your local repo and delete your  extra branch(es).
 
 ## Rules
 
