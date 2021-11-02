@@ -1,5 +1,5 @@
 # Animations
-## Hover Animations
+## Form Animations
 An open source collection of coded animations, from loaders, to menus, and scroll transitions and much more.
 
 ## Contribution Guidelines
