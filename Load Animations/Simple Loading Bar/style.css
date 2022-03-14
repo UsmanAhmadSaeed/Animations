@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: rgba(247, 202, 193);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	min-height: 100vh;
+}
+
+.loadingBar {
+	width: 100%;
+	max-width: 200px;
+	height: 30px;
+	padding: 4px;
+	border: 2px solid rgba(255, 255, 255);
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.insideBar {
+	width: 100%;
+	height: 30px;
+	background: rgba(255, 255, 255);
+	border-radius: 20px;
+	animation: animate 5s infinite;
+}
+
+@keyframes animate {
+	0% {
+		max-width: 0%;
+	}
+
+	30% {
+		max-width: 30%;
+	}
+
+	50% {
+		max-width: 50%;
+	}
+
+	90% {
+		max-width: 90%;
+	}
+
+	100% {
+		max-width: 100%;
+	}
+}
