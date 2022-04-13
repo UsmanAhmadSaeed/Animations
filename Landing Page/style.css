@@ -11,14 +11,14 @@
 
 .site-logo {
   position: fixed;
-	top: 50px; 
-	left: 130px; 
+	top: 30px;
+	left: 50px;
 }
 
 .github-button {
   position: fixed;
-	top: 70px; 
-	right: 50px; 
+	top: 50px;
+	right: 50px;
 }
 
 html, body {
@@ -32,14 +32,14 @@ html, body {
 ul {
   list-style-type: none;
   margin: 50;
-  padding: 60px;
+  padding: 40px;
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 25px;
   text-align: center;
   position: absolute;
   width: 100%;
-  left: -40px;
+  left: -100px;
 }
 
 li {
@@ -58,8 +58,8 @@ li, a {
   font-weight: 800;
   font-size: 40px;
   position: fixed;
-  left: 130px;
-  bottom: 480px;
+  left: 50px;
+  bottom: 320px;
   color: rgba(29, 17, 76, 1);
 }
 
@@ -72,16 +72,16 @@ li, a {
   font-weight: 500;
   font-size: 20px;
   position: fixed;
-  left: 130px;
-  bottom: 430px;
+  left: 50px;
+  bottom: 270px;
   color: rgba(241, 238, 255, 1);
 }
 
 .animation-cards {
   margin: 0 auto;
   position: fixed;
-  right: 150px;
-  bottom: 250px;
+  right: 70px;
+  bottom: 130px;
   image-rendering: pixelated;
 }
 
