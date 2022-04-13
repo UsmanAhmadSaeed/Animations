@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700,500,600");
+
+#gradient-background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-logo {
+  position: fixed;
+	top: 50px; 
+	left: 130px; 
+}
+
+.github-button {
+  position: fixed;
+	top: 70px; 
+	right: 50px; 
+}
+
+html, body {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 50;
+  padding: 60px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: -40px;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 15px 70px;
+}
+
+li, a {
+  color: white;
+  text-decoration: none;
+}
+
+.slogan {
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 40px;
+  position: fixed;
+  left: 130px;
+  bottom: 480px;
+  color: rgba(29, 17, 76, 1);
+}
+
+.special-word {
+  color: rgba(228, 223, 241, 1);
+}
+
+.description {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  position: fixed;
+  left: 130px;
+  bottom: 430px;
+  color: rgba(241, 238, 255, 1);
+}
+
+.animation-cards {
+  margin: 0 auto;
+  position: fixed;
+  right: 150px;
+  bottom: 250px;
+  image-rendering: pixelated;
+}
+
+.copyright {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 17px;
+  position: fixed;
+  right: 80px;
+  bottom: 20px;
+  color: rgb(255, 255, 255);
+}
