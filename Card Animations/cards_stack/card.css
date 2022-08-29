@@ -1,0 +1,564 @@
+.packages_con{
+    width: 100%;
+    height:auto;
+    display :flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
+
+.package_header >span{
+    font-family:'Bilbo Swash Caps', cursive;
+    font-size:30px;
+    line-height:30px;
+    font-weight:500;
+    color: #e8604c;
+}
+
+.package_header >h2{
+    font-family:"DM Sans",sans-serif;
+    font-weight:700;
+    color: #313041;
+    font-size:30px;
+    line-height:45px;
+    letter-spacing:0.02em
+
+}
+
+.todos{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.todos_child{
+    height: 100%;
+    width:500%;
+    display:flex;
+
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    /* animation-play-state: paused; */
+}
+
+@keyframes slider {
+
+    12.5%{
+        margin-left: -100%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    37.5%{
+        margin-left: -200%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    62.5%{
+        margin-left: -300%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    87.5%{
+        margin-left: -400%;
+    }
+    100%{
+        margin-left: -400%;
+    }
+}
+
+.todo{
+    width:20%;
+    height: 100%;
+}
+
+.ele{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.package{
+    width:90%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+.package_img{
+    height:60%;
+    width:100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition:transform 0.5s ease;
+    
+}
+
+.package_img > img{
+    transition: all 0.5s;
+}
+
+.package_img > img:hover{
+    transform: scale(1.05);
+
+
+}
+
+
+.heart > a{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color:rgba(49, 48, 65, 0.459);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:50%;
+    text-align: center;
+    color: #fff;
+    font-size:14px;
+    line-height:38px;
+    z-index: 10;
+    text-decoration: none;
+    transition:all 0.5s ease;
+}
+
+ .heart > a:hover {
+    background-color: #fff;
+    color:#e8604c
+    
+
+
+} 
+
+.package_content{
+    height: 40%;
+    width: 99.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 35px 0px 40px;
+    border: 1px solid #ebe6de;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
+    
+}
+
+.package_rank{
+    width: 100%;
+    height:20%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color:#787780;
+    font-size:13px;
+    line-height:23px;
+    font-family: "DM Sans",sans-serif;
+    
+    
+}
+
+.package_rank > h3{
+    font-weight:500;
+    
+}
+
+.package_rank > h3:nth-child(1){
+    margin-left: 15px;
+    color: #ffa801;
+}
+
+.package_rank > h3:nth-child(2){
+    margin-left: 6px;
+}
+.package_head{
+    width:100%;
+    height:50%;
+    color: #313041;
+    line-height:30px;
+    font-size:12px;
+    letter-spacing:0.1em;
+}
+
+.package_head > h2 {
+    margin-left:15px;
+    font-weight: 700;
+    margin-top:4px;
+    margin-bottom:5px;
+    font-family: "DM Sans",sans-serif;
+}
+
+.package_head> h2:nth-child(2){
+    font-size:14px;
+    color: #787780;
+    font-weight:400
+    
+}
+
+.package_head > h2:nth-child(2) > span {
+    font-size:18px;
+    font-weight: 700;
+    color: #e8604c;
+    
+}
+
+.package_days{
+    width:80%;
+    height:15%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: "DM Sans",sans-serif;
+    background-color:#faf5ee;
+    color:#787780; 
+    padding: 12px 18px;
+    margin-bottom: 19px;
+    border-radius: 8px;
+    margin-top: 19px;
+}
+
+.package_days >h3{
+    letter-spacing:0.1em;
+    padding-left: 10px;
+    font-size:12px;
+    font-weight: 500;
+}
+
+.large{
+    width:20%;
+    height: 100%;
+}
+
+.screen{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.tour{
+    width: 22%;
+    height: 90%;
+    flex-direction: column;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+.tour_img{
+    height:50%;
+    width:100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition:transform 0.5s ease;
+}
+
+.tour_img > img{
+    transition: all 0.5s;
+}
+
+.tour_img > img:hover{
+    transform: scale(1.05);
+
+
+}
+
+.tour_content{
+    height: 50%;
+    width: 99.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 1px solid #ebe6de;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color:rgb(255, 255, 255);
+    
+}
+
+.tour_rank{
+    width: 100%;
+    height:20%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color:#787780;
+    font-size:13px;
+    padding-top:20px;
+    line-height:23px;
+    font-family: "DM Sans",sans-serif;
+    
+    
+}
+
+.tour_rank > h3{
+    font-weight:500;
+    
+}
+
+.tour_rank > h3:nth-child(1){
+    margin-left: 15px;
+    color: #ffa801;
+}
+
+.tour_rank > h3:nth-child(2){
+    margin-left: 6px;
+}
+.tour_head{
+    width:100%;
+    height:50%;
+    color: #313041;
+    line-height:30px;
+    font-size:12px;
+    letter-spacing:0.1em;
+}
+
+.tour_head > h2 {
+    margin-left:15px;
+    font-weight: 700;
+    margin-top:4px;
+    margin-bottom:5px;
+    font-family: "DM Sans",sans-serif;
+}
+
+.tour_head> h2:nth-child(2){
+    font-size:14px;
+    color: #787780;
+    font-weight:400
+    
+}
+
+.tour_head > h2:nth-child(2) > span {
+    font-size:18px;
+    font-weight: 700;
+    color: #e8604c;
+    
+}
+
+.tour_days{
+    width:80%;
+    height:15%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: "DM Sans",sans-serif;
+    background-color:#faf5ee;
+    color:#787780; 
+    padding: 6px 10px;
+    margin-bottom: 19px;
+    border-radius: 8px;
+    margin-top: 19px;
+}
+
+.tour_days >h3{
+    letter-spacing:0.1em;
+    padding-left: 10px;
+    font-size:12px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+@media screen and (min-width:760px) and (max-width:1800px) {
+
+    .package_header >span{
+        font-family:'Bilbo Swash Caps', cursive;
+        font-size:35px;
+        line-height:30px;
+        font-weight:500;
+        color: #e8604c;
+    }
+    
+    .package_header >h2{
+        font-family:"DM Sans",sans-serif;
+        font-weight:700;
+        color: #313041;
+        font-size:40px;
+        line-height:60px;
+        letter-spacing:0.02em
+    
+    }
+
+    .large_screen{
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+        
+        
+    }
+    
+    .large_screen_child{
+        height: 100%;
+        width:500%;
+        display:flex;
+    
+        animation-name: slider;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+    }
+    
+    .large{
+        width:20%;
+        height: 100%;
+    }
+    
+    .screen{
+        width:100%;
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    
+    .tour{
+        width: 22%;
+        height: 90%;
+        flex-direction: column;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px
+    }
+    
+    .tour_img{
+        height:50%;
+        width:100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transition:transform 0.5s ease;
+    }
+    
+    .tour_img > img{
+        transition: all 0.5s;
+    }
+    
+    .tour_img > img:hover{
+        transform: scale(1.05);
+    
+    
+    }
+    
+    .tour_content{
+        height: 50%;
+        width: 99.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        border: 1px solid #ebe6de;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color:rgb(255, 255, 255);
+        
+    }
+    
+    .tour_rank{
+        width: 100%;
+        height:20%;
+        background-color:rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        color:#787780;
+        font-size:13px;
+        padding-top:20px;
+        line-height:23px;
+        font-family: "DM Sans",sans-serif;
+        
+        
+    }
+    
+    .tour_rank > h3{
+        font-weight:500;
+        
+    }
+    
+    .tour_rank > h3:nth-child(1){
+        margin-left: 15px;
+        color: #ffa801;
+    }
+    
+    .tour_rank > h3:nth-child(2){
+        margin-left: 6px;
+    }
+    .tour_head{
+        width:100%;
+        height:50%;
+        color: #313041;
+        line-height:30px;
+        font-size:12px;
+        letter-spacing:0.1em;
+    }
+    
+    .tour_head > h2 {
+        margin-left:15px;
+        font-weight: 700;
+        margin-top:4px;
+        margin-bottom:5px;
+        font-family: "DM Sans",sans-serif;
+    }
+    
+    .tour_head> h2:nth-child(2){
+        font-size:14px;
+        color: #787780;
+        font-weight:400
+        
+    }
+    
+    .tour_head > h2:nth-child(2) > span {
+        font-size:18px;
+        font-weight: 700;
+        color: #e8604c;
+        
+    }
+    
+    .tour_days{
+        width:80%;
+        height:15%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-family: "DM Sans",sans-serif;
+        background-color:#faf5ee;
+        color:#787780; 
+        padding: 6px 10px;
+        margin-bottom: 19px;
+        border-radius: 8px;
+        margin-top: 19px;
+    }
+    
+    .tour_days >h3{
+        letter-spacing:0.1em;
+        padding-left: 10px;
+        font-size:12px;
+        font-weight: 500;
+    }
+    
+
+
+}
