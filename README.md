@@ -42,6 +42,10 @@ To contribute to this repository:
 
 - [Login Person](https://animations.gq/Form%20Animations/Show%20Password/index.html)
 
+### Menu Animations
+
+- [Liquid Animation](https://animations.gq/Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
+
 ## Status
 
 Help needed in defining better guidelines, rules and creating a site to showcase projects. Please feel free to contribute.
