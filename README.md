@@ -19,6 +19,7 @@ To contribute to this repository:
 ## Rules
 
 - No frameworks allowed appart from [GSAP](https://greensock.com/gsap/). Pure HTML, CSS/SCSS, and JS animations.
+- In case you use images, they must be external. Use a cloud based images service as [cloudinary](https://cloudinary.com/), [imgur](https://imgur.com/), etc...
 - Follow the Contribution Guidelines.
 - By contributing to this repository, you give everyone right to use your code as needed.
 - Be helpful and friendly.
