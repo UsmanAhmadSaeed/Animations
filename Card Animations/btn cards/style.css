@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+body {
+    background-color: rgb(189, 189, 189);
+    overflow: auto;
+}
+html {
+    overflow: auto;
+}
+a {
+    cursor: pointer;
+}
+.container {
+    max-width: 1500px;
+    min-width: 1500px;
+    margin-inline: auto;
+    margin-top: 5%;
+}
+.btns {
+    display: flex;
+    max-width: 40%;
+    justify-content: space-evenly;
+}
+.btn1:active, .btn2:active, .btn3:active, .btn4:active {
+    transform:scaleY(-90%);
+}
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    opacity: 0.8;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+    height: 75px;
+    width: 80px;
+    background: radial-gradient(rgb(247, 42, 76), rgb(253, 72, 103));
+    border-radius: 50%;
+    box-shadow: 1px 3px 4px rgba(228, 59, 255, 0.83), inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+.cards {
+    margin-top: 2%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.card1, .card2, .card3, .card4 {
+    width: 325px;
+    height: 430px;
+    border-radius: 25px;
+    overflow: auto;
+}
+.card-image img {
+    width: 60%;
+    margin-inline: 20%;
+}
+.card-title {
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+.card-text {
+    border-radius: 25px;
+    height: 25%;
+}
+
+/* expanded styling */
+
+#faded, .faded {
+    transform: scale(0.7);
+    opacity: 0.3;
+}
+#expand {
+    position: relative;
+    width: 600px;
+    animation: expand 0.5s ease-out;
+    height: 600px;
+    font-size:xx-large;
+}
+@keyframes expand {
+    from {width:325px; height: 550px; opacity :0.3;}
+    to {width:600px; height: 600px; opacity: 1; font-size:xx-large;}
+}
+
+/* card customisation */
+
+.card1 .card-image img {
+    border-radius: 50px;
+}
+
+.card2 .card-image img {
+    border-radius: 25px;
+}
+
+.card3 .card-image img {
+    transform: scaleX(150%);
+}
+
+.card4 .card-image img {
+    border-radius: 50%;
+}
+.card4 .card-text span * {
+    text-decoration: none;
+}
+.card4 .card-text span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:2em;
+}

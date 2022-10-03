@@ -1,19 +1,34 @@
+:root {
+    --std: 2px solid black;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: var(--std);
+}
+html {
+    font-size: 1em;
+}
 body{
+    padding: 2%;
     width: 100%;
     height: 200vh;
 }
-.card-img-kkritii {
-    padding: 10px;
+
+/* 180deg flip card styling */
+.card-img {
     width: 50px;
+    margin: auto;
     height: 50px;
     border-radius: 50%;
 }
 
 .flip-card {
     background-color:transparent;
+    margin: auto;
     width: 270px;
     height:350px;
-    margin-left : 20px;
     text-align: center;
     perspective: 1000px;
 }
@@ -78,5 +93,3 @@ body{
     margin: 10px;
     text-align: center;
 }
-
-
