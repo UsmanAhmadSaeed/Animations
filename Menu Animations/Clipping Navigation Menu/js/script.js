@@ -28,17 +28,23 @@ function navig(){
     const list = navL.getAttribute("data-nav");
     let images = document.getElementById(list);
     
-    navL.addEventListener(`mouseover`, () =>{
-      document.getElementById(list).scrollIntoView({behavior: "smooth", block: "start"});
-    });
+    navL.addEventListener(`mouseover`, ()=>hoverAnimate(list));
 
     navL.addEventListener(`click`, () =>{
       navs.classList.add(`navsActivated`);
       bg.classList.add(`bgActivated`);
       images.classList.add(`imagesActivated`);
       nav.classList.add(`navActivated`);
+      navs.classList.add('runnin');
+      navs.addEventListener('transitionend',()=>{
+        navs.classList.remove('runnin');
+      });
     });
   });
+}
+const hoverAnimate = (list) =>{
+  if (!document.querySelector(`.navs`).classList.contains('runnin'))
+    document.getElementById(list).scrollIntoView({behavior: "smooth", block: "start"});
 }
 
 window.onload = () => {
