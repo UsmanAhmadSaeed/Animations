@@ -37,7 +37,10 @@ function navig(){
       nav.classList.add(`navActivated`);
       navs.classList.add('runnin');
       navs.addEventListener('transitionend',()=>{
-        navs.classList.remove('runnin');
+        setTimeout(()=>{
+          console.log('test');
+          navs.classList.remove('runnin');
+        },1000)
       });
     });
   });
