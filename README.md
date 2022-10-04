@@ -63,6 +63,7 @@ To contribute to this repository:
 ### Menu Animations
 
 - [Liquid Animation](https://animations.gq/Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
+- [Clipping Navigation Menu](https://animations.gq/Menu%20Animations/Clipping%20Navigation%20Menu/index.html)
 
 
 ### Scroll Animations
