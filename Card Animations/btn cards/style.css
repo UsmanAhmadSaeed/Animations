@@ -1,53 +1,58 @@
+:root {
+    --btn-height : 35px;
+    --btn-width : 40px;
+    --card-height : 354px;
+    --card-width : 260px;
+    --container-width : 1100px;
+    --std-title-size : 25px; 
+    --std-font-size : 15px; 
+    --expand-height: 450px;
+    --expand-width: 450px;
+}
+
 * {
     box-sizing: border-box;
     padding: 3px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
 }
-body {
-    background-color: rgb(189, 189, 189);
-    overflow: auto;
-}
-html {
-    overflow: auto;
-}
 a {
     cursor: pointer;
 }
 .container {
-    max-width: 1500px;
-    min-width: 1500px;
+    max-width: var(--container-width);
     margin-inline: auto;
     margin-top: 5%;
 }
 .btns {
     display: flex;
     max-width: 40%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .btn1:active, .btn2:active, .btn3:active, .btn4:active {
-    transform:scaleY(-90%);
+    transform: skew(10deg);
 }
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .btn1, .btn2, .btn3, .btn4 {
-    height: 75px;
-    width: 80px;
+    height: var(--btn-height);
+    width: var(--btn-width);
     background: radial-gradient(rgb(247, 42, 76), rgb(253, 72, 103));
     border-radius: 50%;
     box-shadow: 1px 3px 4px rgba(228, 59, 255, 0.83), inset 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
 .cards {
     margin-top: 2%;
-    padding: 3%;
+    padding-top: 2%;
+    padding-bottom: 2% ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .card1, .card2, .card3, .card4 {
-    width: 325px;
-    height: 430px;
+    width: var(--card-width);
+    height: var(--card-height);
     border-radius: 25px;
     overflow: auto;
 }
@@ -58,29 +63,31 @@ a {
 .card-title {
     border-radius: 25px;
     text-align: center;
-    font-size: 2em;
+    font-size:var(--std-title-size);
 }
 .card-text {
     border-radius: 25px;
-    height: 25%;
+    font-size:var(--std-font-size);
 }
 
 /* expanded styling */
 
-#faded, .faded {
+#faded {
     transform: scale(0.7);
     opacity: 0.3;
+    overflow: hidden;
 }
 #expand {
     position: relative;
-    width: 600px;
+    width: var(--expand-width);
     animation: expand 0.5s ease-out;
-    height: 600px;
+    height: var(--expand-height);
     font-size:xx-large;
 }
+
 @keyframes expand {
     from {width:325px; height: 550px; opacity :0.3;}
-    to {width:600px; height: 600px; opacity: 1; font-size:xx-large;}
+    to {width:var(--expand-width); height: var(--expand-height); opacity: 1; font-size:xx-large;}
 }
 
 /* card customisation */
@@ -108,4 +115,48 @@ a {
     flex-direction: column;
     text-align: center;
     font-size:2em;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width:1000px) {
+    :root {
+        --btn-height : 25px;
+        --btn-width : 30px;
+        --card-height : 244px;
+        --card-width : 160px;
+        --container-width : 1100px;
+        --std-title-size : 15px; 
+        --std-font-size : 8px; 
+        --expand-height: 400px;
+        --expand-width: 400px;
+    }
+}
+@media only screen and (max-width:600px) {
+    :root {
+        --btn-height : 15px;
+        --btn-width : 20px;
+        --card-height : 160px;
+        --card-width : 120px;
+        --container-width : 1100px;
+        --std-title-size : 12px; 
+        --std-font-size : 8px; 
+        --expand-height: 200px;
+        --expand-width: 250px;
+    }
+    .cards {
+        margin-top: 2%;
+        padding-top: 2%;
+        padding-bottom: 2% ;
+        display: grid;
+        grid-template-columns: 45% 45%;
+    }
+    #expand {
+        position: absolute;
+        width: var(--expand-width);
+        animation: expand 0.5s ease-out;
+        height: var(--expand-height);
+        font-size:xx-large;
+    }
 }
