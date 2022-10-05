@@ -1,60 +1,54 @@
+
+// counter decides the next action by card 
 let count = 0;
-click_1 = (() => {
-    if (count%2 == 0){
-        document.querySelector(".card1").setAttribute("id", "expand")
-        document.querySelector(".card2").setAttribute("id", "faded")
-        document.querySelector(".card3").setAttribute("id", "faded")
-        document.querySelector(".card4").setAttribute("id", "faded")
-    } else {
-        document.querySelector(".card1").removeAttribute("id")
-        document.querySelector(".card2").removeAttribute("id")
-        document.querySelector(".card3").removeAttribute("id")
-        document.querySelector(".card4").removeAttribute("id")
-    }
-    count += 1
-})
 
-click_2 = (() => {
-    if (count%2 == 0){
-        document.querySelector(".card2").setAttribute("id", "expand")
-        document.querySelector(".card1").setAttribute("id", "faded")
-        document.querySelector(".card3").setAttribute("id", "faded")
-        document.querySelector(".card4").setAttribute("id", "faded")
-    } else {
-        document.querySelector(".card2").removeAttribute("id")
-        document.querySelector(".card1").removeAttribute("id")
-        document.querySelector(".card3").removeAttribute("id")
-        document.querySelector(".card4").removeAttribute("id")
-    }
-    count +=1
-})
+// clicked function in called when btn is clicked
+clicked = ((button) => {
+    
+    let current = button.dataset.open
+    
+    // rest will be an array of cards other than current
+    // add new cards here
+    let rest = ["card1", "card2", "card3", "card4"] 
+    rest[rest.indexOf(current)] = rest[rest.length - 1]
+    rest.pop()
 
-click_3 = (() => {
-    if (count%2 == 0){
-        document.querySelector(".card3").setAttribute("id", "expand")
-        document.querySelector(".card1").setAttribute("id", "faded")
-        document.querySelector(".card2").setAttribute("id", "faded")
-        document.querySelector(".card4").setAttribute("id", "faded")
-    } else{
-        document.querySelector(".card3").removeAttribute("id")
-        document.querySelector(".card1").removeAttribute("id")
-        document.querySelector(".card2").removeAttribute("id")
-        document.querySelector(".card4").removeAttribute("id")
+    // if current element contains expand attribute collapse it (count = 1)
+    if (document.getElementById(current).hasAttribute("expand")){
+        count = 1
     }
-    count +=1
-})
-
-click_4 = (() => {
+    
+    // if current is in normal state dont perform any operation (count == -1)
+    else if (document.getElementById(current).hasAttribute("normal")) {
+        count = -1
+    } 
+    
+    // and in all other cases collapse/shrink card (counter == 0)
+    else {
+        count = 0
+    } 
+    
+    // counter logic implemented
     if (count%2 == 0){
-        document.querySelector(".card4").setAttribute("id", "expand")
-        document.querySelector(".card1").setAttribute("id", "faded")
-        document.querySelector(".card2").setAttribute("id", "faded")
-        document.querySelector(".card3").setAttribute("id", "faded")
+        document.getElementById(current).classList.add("expand");
+        document.getElementById(current).setAttribute("expand","true");
+        for (let i = 0; i < rest.length; i++){
+            document.getElementById(rest[i]).classList.add("faded")
+            document.getElementById(rest[i]).removeAttribute("expand");
+            document.getElementById(rest[i]).classList.remove("expand");
+            document.getElementById(current).classList.remove("faded");
+        }
+    } else if (count == -1) {
+        document.getElementById(current).setAttribute("normal", "true")
     } else {
-        document.querySelector(".card4").removeAttribute("id")
-        document.querySelector(".card1").removeAttribute("id")
-        document.querySelector(".card3").removeAttribute("id")
-        document.querySelector(".card2").removeAttribute("id")
+        document.getElementById(current).classList.remove("expand");
+        document.getElementById(current).classList.add("shrink");
+        document.getElementById(current).removeAttribute("expand");
+        document.getElementById(current).removeAttribute("normal");
+        for (let i = 0; i < rest.length; i++){
+            document.getElementById(rest[i]).classList.remove("faded")
+        }
     }
-    count +=1
+    rest = ["card1", "card2", "card3", "card4"] 
+    
 })

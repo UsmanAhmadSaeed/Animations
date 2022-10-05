@@ -10,14 +10,14 @@
 <body>
     <div class="container">
         <div class="btns">
-            <a onclick="click_1()"><div class="btn1"></div></a>
-            <a onclick="click_2()"><div class="btn2"></div></a>
-            <a onclick="click_3()"><div class="btn3"></div></a>
-            <a onclick="click_4()"><div class="btn4"></div></a>
+            <a onclick="clicked(this)" data-open="card1"><div class="btn1"></div></a>
+            <a onclick="clicked(this)" data-open="card2"><div class="btn2"></div></a>
+            <a onclick="clicked(this)" data-open="card3"><div class="btn3"></div></a>
+            <a onclick="clicked(this)" data-open="card4"><div class="btn4"></div></a>
         </div>
 
         <div class="cards">
-            <div class="card1">
+            <div id="card1">
                 <div class="card-content">
                     <div class="card-image">
                         <img src="./image.jpg" alt="image">
@@ -27,14 +27,14 @@
                     </div>
                     <div class="card-text">
                         <p>
-                            <!-- recomended add 35 words -->
-                        atque ad quidem doloribus tempora molestiae voluptatem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dignissimos, natus, quas quisquam illo ipsam maxime quo possimus minus quaerat placeat necessitatibus labore commodi ad, culpa consequatur optio alias non! Consectetur ea aliquam eos quibusdam!
+                            <!-- recomended 35 words -->
+                            atque ad quidem doloribus tempora molestiae voluptatem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dignissimos, natus, quas quisquam illo ipsam maxime quo possimus minus quaerat placeat necessitatibus labore commodi ad, culpa consequatur optio alias non! Consectetur ea aliquam eos quibusdam!
                         </p>
                     </div>
                 </div>    
             </div>
 
-            <div class="card2">
+            <div id="card2">
                 <div class="card-content">
                     <div class="card-image">
                         <img src="./image.jpg" alt="image">
@@ -55,7 +55,7 @@
                 </div> 
             </div>
 
-            <div class="card3">
+            <div id="card3">
                 <div class="card-content">
                     <div class="card-image">
                         <img src="./image.jpg" alt="image">
@@ -71,7 +71,7 @@
                 </div> 
             </div>
 
-            <div class="card4">
+            <div id="card4">
                 <div class="card-content">
                     <div class="card-image">
                         <img src="./profile.png" alt="image">

@@ -9,6 +9,9 @@
     --expand-height: 450px;
     --expand-width: 450px;
 }
+body {
+    background-color: rgb(209, 209, 209);
+}
 
 * {
     box-sizing: border-box;
@@ -33,7 +36,7 @@ a {
     transform: skew(10deg);
 }
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .btn1, .btn2, .btn3, .btn4 {
@@ -50,11 +53,15 @@ a {
     display: flex;
     justify-content: space-evenly;
 }
-.card1, .card2, .card3, .card4 {
+#card1, #card2, #card3, #card4 {
     width: var(--card-width);
     height: var(--card-height);
     border-radius: 25px;
     overflow: auto;
+}
+#card1.expand, #card2.expand, #card3.expand, #card4.expand {
+    height: var(--expand-height);
+    width: var(--expand-width);
 }
 .card-image img {
     width: 60%;
@@ -70,14 +77,24 @@ a {
     font-size:var(--std-font-size);
 }
 
-/* expanded styling */
+/* expanded/shrink styling */
 
-#faded {
+.faded {
     transform: scale(0.7);
-    opacity: 0.3;
     overflow: hidden;
+    opacity: 0.3;
 }
-#expand {
+
+.shrink {
+    animation: shrink 0.4s ease-out;
+}
+
+@keyframes shrink {
+    from {width:var(--expand-width); height: var(--expand-height); opacity: 1; font-size:xx-large;}
+    to {width:var(--card-width); height: var(--card-height);}
+}
+
+.expand {
     position: relative;
     width: var(--expand-width);
     animation: expand 0.5s ease-out;
@@ -86,31 +103,31 @@ a {
 }
 
 @keyframes expand {
-    from {width:325px; height: 550px; opacity :0.3;}
+    from {width:325px; height: 550px; opacity :0.5;}
     to {width:var(--expand-width); height: var(--expand-height); opacity: 1; font-size:xx-large;}
 }
 
 /* card customisation */
 
-.card1 .card-image img {
+#card1 .card-image img {
     border-radius: 50px;
 }
 
-.card2 .card-image img {
+#card2 .card-image img {
     border-radius: 25px;
 }
 
-.card3 .card-image img {
+#card3 .card-image img {
     transform: scaleX(150%);
 }
 
-.card4 .card-image img {
+#card4 .card-image img {
     border-radius: 50%;
 }
-.card4 .card-text span * {
+#card4 .card-text span * {
     text-decoration: none;
 }
-.card4 .card-text span {
+#card4 .card-text span {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -142,8 +159,8 @@ a {
         --container-width : 1100px;
         --std-title-size : 12px; 
         --std-font-size : 8px; 
-        --expand-height: 200px;
-        --expand-width: 250px;
+        --expand-height: 250px;
+        --expand-width: 200px;
     }
     .cards {
         margin-top: 2%;
@@ -152,7 +169,7 @@ a {
         display: grid;
         grid-template-columns: 45% 45%;
     }
-    #expand {
+    .expand {
         position: absolute;
         width: var(--expand-width);
         animation: expand 0.5s ease-out;
