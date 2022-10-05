@@ -1,0 +1,65 @@
+/*
+Inspired by https://dribbble.com/shots/2235810-Loader-v6
+*/
+
+$dot-color: #FD3739;
+$dot-size: 20px;
+$circle-size: 55px;
+
+$animation-time: 5s;
+
+body {
+	background: #FFFBF5;
+}
+
+.dots {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+
+	filter: url(#goo);
+}
+
+.dot {
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	&:before {
+		content: '';
+		width: $dot-size;
+		height: $dot-size;
+		border-radius: 50%;
+		background: $dot-color;
+		position: absolute;
+		left: 50%;
+		top: -($circle-size);
+		margin-left: -($dot-size/2);
+		margin-top: -($dot-size/2);
+	}
+
+	@for $i from 0 to 11 {
+
+		@keyframes dot-#{$i} {
+			0% {
+				transform: rotate(180deg + $i * (360deg / 11));
+			}
+
+			100% {
+				transform: rotate(180deg + ($i + 1) * (5 * 360deg / 11) + $i * (360deg / 11));
+			}
+		}
+
+		&:nth-child(#{$i + 1}) {
+			transform: rotate($i * (360deg / 11));
+			animation: dot-#{$i} $animation-time cubic-bezier(.3, .0, .7, 1) infinite;
+		}
+	}
+}
