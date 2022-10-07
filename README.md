@@ -34,7 +34,7 @@ To contribute to this repository:
 
 ### Gradient color Animations
 
--[Linear Gradients](https://animations.gq/Gradient%20Animations/Linear_Gradients/index.html)
+- [Linear Gradients](https://animations.gq/Gradient%20Animation/Linear_Gradients/index.html)
 
 
 ### Card Animations
