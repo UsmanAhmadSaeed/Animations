@@ -31,6 +31,12 @@ To contribute to this repository:
 
 - [Big Button](https://animations.gq/Click%20Animations/big-button/index.html)
 
+
+### Gradient color Animations
+
+-[Linear Gradients](https://animations.gq/Gradient%20Animations/Linear_Gradients/index.html)
+
+
 ### Card Animations
 
 - [Card](https://animations.gq/Card%20Animations/cards/card.html)
