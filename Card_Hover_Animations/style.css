@@ -1,0 +1,556 @@
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+.grid figure{
+    position:relative;
+    float:left;
+    overflow:hidden;
+    margin:10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: #3085a3;
+    text-align:center;
+    cursor: pointer;
+}
+.grid figure img{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+.grid figure figcaption{
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.grid figure figcaption::before, .gridfigure figcaption::after{
+    pointer-events:none;
+}
+
+.grid figure h2{
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+.grid figure h2 span{
+    font-weight: 800;
+}
+.grid figure h2, .grid figure p{
+    margin: 0;
+}
+.grid figure p{
+    letter-spacing: 1px;
+    font-size:70%;
+}
+
+/* card1 */
+figure.card1 figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+}
+figure.card1 img {
+max-width: none;
+width: -webkit-calc(100% + 50px);
+width: calc(100% + 50px);
+opacity: 0.7;
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: translate3d(-40px,0, 0);
+transform: translate3d(-40px,0,0);
+}
+
+figure.card1 figcaption {
+text-align: left;
+}
+
+figure.card1 figcaption > div {
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 2em;
+width: 100%;
+height: 50%;
+}
+
+figure.card1 h2,
+figure.card1 p {
+-webkit-transform: translate3d(0,40px,0);
+transform: translate3d(0,40px,0);
+}
+
+figure.card1 h2 {
+-webkit-transition: -webkit-transform 0.35s;
+transition: transform 0.35s;
+}
+
+figure.card1 p {
+color: rgba(255,255,255,0.8);
+opacity: 0;
+-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.card1:hover img,
+figure.card1:hover p {
+opacity: 1;
+}
+
+figure.card1:hover img,
+figure.card1:hover h2,
+figure.card1:hover p {
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+
+figure.card1:hover p {
+-webkit-transition-delay: 0.05s;
+transition-delay: 0.05s;
+-webkit-transition-duration: 0.35s;
+transition-duration: 0.35s;
+}
+
+/* card2 */
+figure.card2 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84%;
+    height: 77%;
+}
+figure.card2 img{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 103%;
+    opacity: 0.8;
+}
+figure.card2 figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+}
+
+figure.card2 h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+figure.card2 figcaption::before,
+figure.card2 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.card2 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+}
+
+figure.card2:hover h2 {
+    color: #fff;
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+}
+
+figure.card2:hover figcaption::before,
+figure.card2:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* card3 */
+figure.card3 figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78%;
+    height: 68%;
+}
+figure.card3 {
+background: #18a367;
+}
+
+figure.card3 img {
+height: 390px;
+}
+
+figure.card3 figcaption {
+padding: 3em;
+}
+
+figure.card3 figcaption::before,
+figure.card3 figcaption::after {
+position: absolute;
+content: '';
+opacity: 0;
+}
+
+figure.card3 figcaption::before {
+top: 50px;
+right: 30px;
+bottom: 50px;
+left: 30px;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+-webkit-transform: scale(0,1);
+transform: scale(0,1);
+-webkit-transform-origin: 0 0;
+transform-origin: 0 0;
+}
+
+figure.card3 figcaption::after {
+top: 30px;
+right: 50px;
+bottom: 30px;
+left: 50px;
+border-right: 1px solid #fff;
+border-left: 1px solid #fff;
+-webkit-transform: scale(1,0);
+transform: scale(1,0);
+-webkit-transform-origin: 100% 0;
+transform-origin: 100% 0;
+}
+
+figure.card3 h2 {
+padding-top: 10%;
+-webkit-transition: -webkit-transform 0.35s;
+transition: transform 0.35s;
+}
+
+figure.card3 p {
+padding: 0.5em 1em;
+text-transform: none;
+opacity: 0;
+-webkit-transform: translate3d(0,10px,0);
+transform: translate3d(0,10px,0);
+}
+
+figure.card3 img,
+figure.card3 h2 {
+-webkit-transform: translate3d(0,-30px,0);
+transform: translate3d(0,-30px,0);
+}
+
+figure.card3 img,
+figure.card3 figcaption::before,
+figure.card3 figcaption::after,
+figure.card3 p {
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.card3:hover img {
+opacity: 0.7;
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+
+figure.card3:hover figcaption::before,
+figure.card3:hover figcaption::after {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+figure.card3:hover h2,
+figure.card3:hover p {
+opacity: 1;
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+
+figure.card3:hover figcaption::after,
+figure.card3:hover h2,
+figure.card3:hover p,
+figure.card3:hover img {
+-webkit-transition-delay: 0.15s;
+transition-delay: 0.15s;
+}
+
+/* card4 */
+
+figure.card4 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 67%;
+}
+figure.card4 img{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 113%;
+    opacity: 0.8;
+}
+figure.card4 {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+
+figure.card4 img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.card4 figcaption {
+    padding: 3em;
+    background-color: rgba(58, 52, 42, 0.7);
+    -webkit-transition: background-color 0.35s;
+    transition: background-color 0.35s;
+}
+
+figure.card4 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+    content: '';
+}
+
+figure.card4 h2 {
+    margin: 5% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+figure.card4 figcaption::before,
+figure.card4 p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+figure.card4:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.card4:hover figcaption::before,
+figure.card4:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.card4:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+figure.card4:hover img {
+    opacity: 0.4;
+}
+
+/* card5 */
+figure.card5 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83%;
+    height: 75%;
+}
+
+figure.card5 {
+    background: #9e5406;
+}
+
+figure.card5 img {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.card5:hover img {
+    opacity: 0.4;
+}
+
+figure.card5 figcaption::before,
+figure.card5 figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.card5 figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+figure.card5 figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+figure.card5 h2 {
+    padding-top: 15%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+
+figure.card5 p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.card5:hover figcaption::before,
+figure.card5:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.card5:hover h2,
+figure.card5:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* card6 */
+figure.card6 figcaption {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            width: 75%;
+            height: 75%;
+        }
+
+        figure.card6 img {
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale3d(1.4, 1.4, 1);
+            transform: scale3d(1.4, 1.4, 1);
+        }
+
+        figure.card6:hover img {
+            opacity: 0.6;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: translate3d(1, 1, 1);
+        }
+
+        figure.card6 figcaption::before,
+        figure.card6 figcaption::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 1px;
+            background: #fff;
+            content: '';
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        figure.card6:hover figcaption::before {
+            opacity: 0.5;
+            -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+            transform: translate3d(-50%, -50%, 0) rotate(45deg);
+        }
+
+        figure.card6:hover figcaption::after {
+            opacity: 0.5;
+            -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+            transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+
+        figure.card6 h2,
+        figure.card6 p {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            width: 100%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+        }
+
+        figure.card6 h2 {
+            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+            transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+        }
+
+        figure.card6 p {
+            padding: 0;
+            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+            transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+        }
+
+        figure.card6:hover h2 {
+            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+            transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+        }
+
+        figure.card6:hover p {
+            -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+            transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+        }
+
+
+        /* media screen */
+        @media screen and (max-width: 50em) {
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
