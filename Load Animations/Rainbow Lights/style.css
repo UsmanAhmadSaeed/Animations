@@ -30,50 +30,53 @@ body {
 /* For each color display */
 .lights span.violet {
     background: var(--violet);
-    animation: violet 1s infinite;
+    animation: violet 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -1.4s;
 }
 
 .lights span.indigo {
     background: var(--indigo);
-    animation: indigo 1s infinite;
+    animation: indigo 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -1.3s;
 }
 
 .lights span.blue {
     background: var(--blue);
-    animation: blue 1s infinite;
+    animation: blue 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -1.2s;
 }
 
 .lights span.green {
     background: var(--green);
-    animation: green 1s infinite;
+    animation: green 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -1.1s;
 }
 
 .lights span.yellow {
     background: var(--yellow);
-    animation: yellow 1s infinite;
+    animation: yellow 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -1.0s;
 }
 
 .lights span.orange {
     background: var(--orange);
-    animation: orange 1s infinite;
+    animation: orange 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -0.9s;
 }
 
 .lights span.red {
     background: var(--red);
-    animation: red 1s infinite;
+    animation: red 1s infinite; /* animation-name duration iteration-count*/
     animation-delay: -0.8s;
 }
 
-/* Animation keyframes for each color */
+/* Animation keyframes for each color
+0%, 100%, 50% - When style change should happen 
+box offset - h-offset v-offset blur spread color */
+
 @keyframes violet {
-    0%, 100% { box-shadow: 0 0 10px 10px var(--violet); }
-    50% { box-shadow: none; }
+    0%, 100% { box-shadow: 0 0 10px 10px var(--violet); } /*This will create a violet blurred spread for 10px aroung the circle span*/
+    50% { box-shadow: none; } /* This will create a light blinking effect as at 50% no box shadow will be present*/
 }
 
 @keyframes indigo {
