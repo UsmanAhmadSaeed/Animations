@@ -1,3 +1,4 @@
+/*Setting color codes to be used*/
 :root {
     --violet: #EE82EE;
     --indigo: #4F69C6;
@@ -26,6 +27,7 @@ body {
     display: inline-block;
 }
 
+/* For each color display */
 .lights span.violet {
     background: var(--violet);
     animation: violet 1s infinite;
@@ -68,6 +70,7 @@ body {
     animation-delay: -0.8s;
 }
 
+/* Animation keyframes for each color */
 @keyframes violet {
     0%, 100% { box-shadow: 0 0 10px 10px var(--violet); }
     50% { box-shadow: none; }
