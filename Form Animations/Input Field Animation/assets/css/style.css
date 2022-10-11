@@ -33,7 +33,7 @@ body {
     background-color: var(--white-color);
 }
 
-/* Input */
+/* Form Input */
 .form {
     height: 100vh;
     display: grid;
@@ -95,6 +95,8 @@ body {
     opacity: 0;
 }
 
+/* Button CSS */
+
 .form__button {
     justify-self: flex-end;
     background-color: var(--black-color);
@@ -135,7 +137,7 @@ body {
     transition: .3s;
 }
 
-/* Input Bounce Animation */
+/* Bounce Animation On Form While Clicking*/
 @keyframes input-animation {
     0% {
         transform: translate(0);
