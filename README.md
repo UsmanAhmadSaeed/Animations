@@ -22,6 +22,12 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 
 - [Big Button](https://animations.gq/Click%20Animations/big-button/index.html)
 
+
+### Gradient color Animations
+
+- [Linear Gradients](https://animations.gq/Gradient%20Animation/Linear_Gradients/index.html)
+
+
 ### Card Animations
 
 - [Card](https://animations.gq/Card%20Animations/cards/card.html)
