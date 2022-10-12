@@ -18,8 +18,8 @@
 }
 
 .loader {
-  width: 16em;
-  height: 8em;
+  width: 23em;
+  height: 11em;
   position: relative;
   overflow: hidden;
 }
@@ -49,13 +49,13 @@
 .loader span {
   position: absolute;
   width: 5%;
-  height: 10%;
+  height: 9%;
   background-color: var(--green);
   border-radius: 50%;
   bottom: 0.2em;
   left: -5%;
   animation: 2s linear infinite;
-  transform-origin: 50% -3em;
+  transform-origin: 40% -4.12em;
   animation-name: run, rotating;
 }
 
