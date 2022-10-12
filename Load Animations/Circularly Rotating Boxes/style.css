@@ -33,7 +33,7 @@
 
 .loader::before {
   width: inherit;
-  height: 0.2em;
+  height: 0.1em;
   background-color: var(--green);
 }
 
