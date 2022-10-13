@@ -51,6 +51,7 @@ body
 	animation: animate 6s linear infinite;
 	animation-delay: -3s;
 }
+/* Used for the animation for the side lines surrounding the box*/
 @keyframes animate 
 {
 	0%
@@ -155,7 +156,10 @@ h2
 {
 	color: #45f3ff;
 }
-input[type="submit"]
+
+/* login buttons css */
+
+input[type="submit"] 
 {
 	border: none;
 	outline: none;
@@ -165,9 +169,15 @@ input[type="submit"]
 	border-radius: 4px;
 	font-weight: 600;
 	width: 100px;
-	margin-top: 10px;
+	margin:auto;
+	margin-top: 30px;
 }
 input[type="submit"]:active 
 {
 	opacity: 0.8;
+}
+input[type="submit"]:hover 
+{
+	background: rgb(57,255,20);
+	background-image: linear-gradient(rgb(57,255,20),lightgreen);
 }
