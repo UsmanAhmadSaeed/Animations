@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #023047;
+	--accent-color: #ffb703;
+}
+
+body {
+	background-color: var(--primary-color);
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	position: relative;
+}
+
+h1 {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #219ebc;
+}
+
+/* basic style for each circle */
+.container span.circles {
+	display: inline-block;
+	background-color: var(--accent-color);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 0.3rem;
+}
+
+/* animation for first circle  */
+.container span:first-child {
+	animation: loader 0.5s ease-in-out alternate infinite;
+}
+
+/* animation for second circle  */
+.container span:nth-child(2) {
+	animation: loader 0.5s ease-in-out 0.2s alternate infinite;
+}
+
+/* animation for third circle  */
+.container span:nth-child(3) {
+	animation: loader 0.5s ease-in-out 0.3s alternate infinite;
+}
+
+/* style for different stages of the animation */
+@keyframes loader {
+	0% {
+		transform: scale(0.5);
+	}
+	50% {
+		transform: scale(0.7);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
