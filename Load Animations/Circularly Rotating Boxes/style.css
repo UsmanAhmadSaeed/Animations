@@ -53,8 +53,8 @@
 /* The three moving balls  */
 .loader span {
   position: absolute;
-  width: 6%;
-  height: 12%;
+  width: 5.5%;
+  height: 11%;
   background-color: var(--green);
   border-radius: 50%;
   bottom: 0.2em;
