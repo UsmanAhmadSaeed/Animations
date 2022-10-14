@@ -1,0 +1,98 @@
+/* Variables for colours */
+:root {
+  --green: #3bba9c;
+  --blue: #1a1c34;
+}
+
+/* Complete screen cover  */
+.loaderWrapper {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* The animation div or body  */
+.loader {
+  width: 23em;
+  height: 11em;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+/* The line at the bottom  */
+.loader::before {
+  width: inherit;
+  height: 0.1em;
+  background-color: var(--green);
+}
+
+/* The circular loop */
+.loader::after {
+  box-sizing: border-box;
+  width: 50%;
+  height: inherit;
+  border: 0.2em solid var(--green);
+  border-radius: 50%;
+  left: 25%;
+}
+/* The three moving balls  */
+.loader span {
+  position: absolute;
+  width: 6%;
+  height: 12%;
+  background-color: var(--green);
+  border-radius: 50%;
+  bottom: 0.2em;
+  left: -5%;
+  animation: 2s linear infinite;
+  transform-origin: 40% -4.13em;
+  animation-name: run, rotating;
+}
+/* The second moving ball  */
+.loader span:nth-child(2) {
+  animation-delay: 0.075s;
+}
+/* The third moving ball  */
+.loader span:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+@keyframes run {
+  0% {
+    left: -5%;
+  }
+  10%,
+  60% {
+    left: calc((100% - 5%) / 2);
+  }
+  70%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes rotating {
+  0%,
+  10% {
+    transform: rotate(0deg);
+  }
+  60%,
+  100% {
+    transform: rotate(-1turn);
+  }
+}
