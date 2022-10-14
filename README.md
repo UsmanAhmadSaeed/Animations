@@ -51,6 +51,6 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 - [Login Person](https://animations.gq/Form%20Animations/Show%20Password/index.html)
 
 ### Menu Animations
-
+- [Outside Curve Navigation Menu](https://animations.gq/Menu%20Animations/Outside%20Curve%20Navigation%20Menu/index.html)
 - [Liquid Animation](https://animations.gq/Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
 - [Clipping Navigation Menu](https://animations.gq/Menu%20Animations/Clipping%20Navigation%20Menu/index.html)
