@@ -52,6 +52,7 @@ body {
     }
 }
 
+/* hover animation on title */
 .animate-charcter:hover {
     cursor: pointer;
     /* text-shadow: 0 0 0px #231557,
@@ -61,7 +62,7 @@ body {
     transform: scale(1.25);
 }
 
-/* grid stylings */
+/* ---grid stylings for all grids--- */
 .grid {
     position: relative;
     margin: 0 auto;
@@ -71,7 +72,7 @@ body {
     text-align: center;
 }
 
-/* Common styles to all grid cards */
+/* ---Common styles to all grid cards--- */
 .grid figure {
     position: relative;
     float: left;
@@ -86,7 +87,8 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-
+ 
+/* grid image stylings */
 .grid figure img {
     position: relative;
     display: block;
@@ -95,6 +97,7 @@ body {
     opacity: 0.8;
 }
 
+/* grid caption stylings */
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
@@ -104,8 +107,9 @@ body {
     backface-visibility: hidden;
 }
 
+
 .grid figure figcaption::before,
-.gridfigure figcaption::after {
+.grid figure figcaption::after {
     pointer-events: none;
 }
 
@@ -149,6 +153,7 @@ body {
 /* Individual cards stylings */
 
 /* card1 */
+/* figcaption position */
 figure.card1 figcaption {
     position: absolute;
     top: 0;
@@ -157,6 +162,7 @@ figure.card1 figcaption {
     height: 100%;
 }
 
+/* card 1 image stylings */
 figure.card1 img {
     max-width: none;
     width: -webkit-calc(100% + 50px);
@@ -181,6 +187,7 @@ figure.card1 figcaption>div {
     height: 50%;
 }
 
+/* translation of image caption */
 figure.card1 h2,
 figure.card1 p {
     -webkit-transform: translate3d(0, 40px, 0);
@@ -199,11 +206,13 @@ figure.card1 p {
     transition: opacity 0.2s, transform 0.35s;
 }
 
+/* hovering effect on image and text */
 figure.card1:hover img,
 figure.card1:hover p {
     opacity: 1;
 }
 
+/* translation effect on image and texts */
 figure.card1:hover img,
 figure.card1:hover h2,
 figure.card1:hover p {
@@ -211,6 +220,7 @@ figure.card1:hover p {
     transform: translate3d(0, 0, 0);
 }
 
+/* slide-in paragraph when hover */
 figure.card1:hover p {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
@@ -219,6 +229,7 @@ figure.card1:hover p {
 }
 
 /* card2 */
+/* figcaption position */
 figure.card2 figcaption {
     position: absolute;
     top: 0;
@@ -227,6 +238,7 @@ figure.card2 figcaption {
     height: 77%;
 }
 
+/* card 2 image stylings */
 figure.card2 img {
     position: relative;
     display: block;
@@ -235,6 +247,7 @@ figure.card2 img {
     opacity: 0.8;
 }
 
+/* styling of figcaption before hovering */
 figure.card2 figcaption::before {
     position: absolute;
     top: 0;
@@ -249,6 +262,7 @@ figure.card2 figcaption::before {
     transform: translate3d(0, 50%, 0);
 }
 
+/* heading styling of card 2 */
 figure.card2 h2 {
     position: absolute;
     top: 50%;
@@ -261,12 +275,14 @@ figure.card2 h2 {
     transform: translate3d(0, -50%, 0);
 }
 
+/* styling of texts before hovering */
 figure.card2 figcaption::before,
 figure.card2 p {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
 }
 
+/* styling of texts */
 figure.card2 p {
     position: absolute;
     bottom: 1em;
@@ -278,12 +294,14 @@ figure.card2 p {
     transform: translate3d(0, 10px, 0);
 }
 
+/* styling of heading on hover */
 figure.card2:hover h2 {
     color: #fff;
     -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
     transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
 }
 
+/* styling of texts on hover */
 figure.card2:hover figcaption::before,
 figure.card2:hover p {
     opacity: 1;
@@ -292,6 +310,7 @@ figure.card2:hover p {
 }
 
 /* card3 */
+/* figcaption position */
 figure.card3 figcaption {
     position: absolute;
     top: 0;
@@ -304,6 +323,7 @@ figure.card3 {
     background: #18a367;
 }
 
+/* image position */
 figure.card3 img {
     height: 390px;
 }
@@ -312,6 +332,7 @@ figure.card3 figcaption {
     padding: 3em;
 }
 
+/* fig caption styling before and after hover */
 figure.card3 figcaption::before,
 figure.card3 figcaption::after {
     position: absolute;
@@ -319,6 +340,7 @@ figure.card3 figcaption::after {
     opacity: 0;
 }
 
+/* figcaption styling before hover */
 figure.card3 figcaption::before {
     top: 50px;
     right: 30px;
@@ -332,6 +354,7 @@ figure.card3 figcaption::before {
     transform-origin: 0 0;
 }
 
+/* figcaption styling after hover */
 figure.card3 figcaption::after {
     top: 30px;
     right: 50px;
@@ -345,12 +368,15 @@ figure.card3 figcaption::after {
     transform-origin: 100% 0;
 }
 
+
+/* transition effect on heading */
 figure.card3 h2 {
     padding-top: 15%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
 }
 
+/* transition effect on paragraph */
 figure.card3 p {
     padding: 0.5em 1em;
     text-transform: none;
@@ -359,12 +385,14 @@ figure.card3 p {
     transform: translate3d(0, 10px, 0);
 }
 
+/* transition effect on image and heading */
 figure.card3 img,
 figure.card3 h2 {
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
 }
 
+/* transition effect on image, and texts */
 figure.card3 img,
 figure.card3 figcaption::before,
 figure.card3 figcaption::after,
@@ -373,12 +401,14 @@ figure.card3 p {
     transition: opacity 0.35s, transform 0.35s;
 }
 
+/* opacity of image on hover */
 figure.card3:hover img {
     opacity: 0.7;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
+/* figcaption hovering effect on before and after */
 figure.card3:hover figcaption::before,
 figure.card3:hover figcaption::after {
     opacity: 1;
@@ -386,6 +416,7 @@ figure.card3:hover figcaption::after {
     transform: scale(1);
 }
 
+/* translation on heading and texts on hover */
 figure.card3:hover h2,
 figure.card3:hover p {
     opacity: 1;
@@ -393,6 +424,7 @@ figure.card3:hover p {
     transform: translate3d(0, 0, 0);
 }
 
+/* hover after effects on figcaption and image */
 figure.card3:hover figcaption::after,
 figure.card3:hover h2,
 figure.card3:hover p,
@@ -402,7 +434,7 @@ figure.card3:hover img {
 }
 
 /* card4 */
-
+/* figcaption position */
 figure.card4 figcaption {
     position: absolute;
     top: 0;
@@ -411,25 +443,24 @@ figure.card4 figcaption {
     height: 67%;
 }
 
+/* image position */
 figure.card4 img {
     position: relative;
     display: block;
     min-height: 100%;
     max-width: 113%;
     opacity: 0.8;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
 }
 
+/* gradient background color */
 figure.card4 {
     background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
     background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
 }
 
-figure.card4 img {
-    opacity: 0.9;
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-}
-
+/* transition property on figcaption */
 figure.card4 figcaption {
     padding: 3em;
     background-color: rgba(58, 52, 42, 0.7);
@@ -437,6 +468,7 @@ figure.card4 figcaption {
     transition: background-color 0.35s;
 }
 
+/* before positioning of figcaption */
 figure.card4 figcaption::before {
     position: absolute;
     top: 30px;
@@ -447,6 +479,7 @@ figure.card4 figcaption::before {
     content: '';
 }
 
+/* transition property on heading */
 figure.card4 h2 {
     margin: 15% 0 10px 0;
     -webkit-transition: -webkit-transform 0.35s;
@@ -455,6 +488,7 @@ figure.card4 h2 {
     transform: translate3d(0, 100%, 0);
 }
 
+/* transition property on figcaption and texts */
 figure.card4 figcaption::before,
 figure.card4 p {
     opacity: 0;
@@ -464,11 +498,13 @@ figure.card4 p {
     transform: scale(0);
 }
 
+/* hover transition on heading */
 figure.card4:hover h2 {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
+/* scaling property on figcaptionand texts */
 figure.card4:hover figcaption::before,
 figure.card4:hover p {
     opacity: 1;
@@ -476,6 +512,7 @@ figure.card4:hover p {
     transform: scale(1);
 }
 
+/* figcaption background color on hover */
 figure.card4:hover figcaption {
     background-color: rgba(58, 52, 42, 0);
 }
@@ -485,6 +522,7 @@ figure.card4:hover img {
 }
 
 /* card5 */
+/* figcaption position */
 figure.card5 figcaption {
     position: absolute;
     top: 0;
@@ -497,6 +535,7 @@ figure.card5 {
     background: #9e5406;
 }
 
+/* image stylings */
 figure.card5 img {
     opacity: 0.7;
     -webkit-transition: opacity 0.35s;
@@ -507,6 +546,7 @@ figure.card5:hover img {
     opacity: 0.4;
 }
 
+/* before and after figcaption stylings */
 figure.card5 figcaption::before,
 figure.card5 figcaption::after {
     position: absolute;
@@ -534,6 +574,7 @@ figure.card5 figcaption::after {
     transform: scale(1, 0);
 }
 
+/* transition of heading */
 figure.card5 h2 {
     padding-top: 15%;
     -webkit-transition: -webkit-transform 0.35s;
@@ -542,6 +583,7 @@ figure.card5 h2 {
     transform: translate3d(0, -20px, 0);
 }
 
+/* transition of texts */
 figure.card5 p {
     padding: 20px 2.5em;
     opacity: 0;
@@ -551,6 +593,7 @@ figure.card5 p {
     transform: translate3d(0, 20px, 0);
 }
 
+/* before and after figcaption stylings on hover*/
 figure.card5:hover figcaption::before,
 figure.card5:hover figcaption::after {
     opacity: 1;
@@ -558,6 +601,7 @@ figure.card5:hover figcaption::after {
     transform: scale(1);
 }
 
+/* before and after heading and texts stylings on hover*/
 figure.card5:hover h2,
 figure.card5:hover p {
     opacity: 1;
@@ -566,6 +610,7 @@ figure.card5:hover p {
 }
 
 /* card6 */
+/* figcaption position */
 figure.card6 figcaption {
     position: absolute;
     top: 0;
@@ -574,6 +619,7 @@ figure.card6 figcaption {
     height: 75%;
 }
 
+/* image stylings */
 figure.card6 img {
     max-width: 101%;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -582,12 +628,13 @@ figure.card6 img {
     transform: scale3d(1.4, 1.4, 1);
 }
 
+/* image stylings on hover */
 figure.card6:hover img {
     opacity: 0.6;
     -webkit-transform: scale3d(1, 1, 1);
     transform: translate3d(1, 1, 1);
 }
-
+/* before and after figcaption stylings */
 figure.card6 figcaption::before,
 figure.card6 figcaption::after {
     position: absolute;
@@ -647,6 +694,7 @@ figure.card6:hover p {
 }
 
 /* card7 */
+/* figcaption position */
 figure.card7 figcaption {
     position: absolute;
     top: 0;
@@ -659,6 +707,7 @@ figure.card7 {
     background: #2f3238;
 }
 
+/* image stylings */
 figure.card7 img {
     max-width: 103.5%;
     -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -721,6 +770,7 @@ figure.card7:hover p:nth-of-type(3) {
     transition-delay: 0.1s;
 }
 
+/* image stylings on hover */
 figure.card7:hover img {
     opacity: 0.4;
     -webkit-transform: scale3d(1.1, 1.1, 1);
@@ -735,6 +785,7 @@ figure.card7:hover p {
 
 
 /* card8 */
+/* figcaption position */
 figure.card8 figcaption {
     position: absolute;
     top: 0;
@@ -743,20 +794,13 @@ figure.card8 figcaption {
     height: 75%;
 }
 
+/* image stylings */
 figure.card8 img {
     position: relative;
     display: block;
     min-height: 100%;
     max-width: 128%;
     opacity: 0.8;
-}
-
-figure.card8 {
-    background: -webkit-linear-gradient(-45deg, #000 0%, #fff 100%);
-    background: linear-gradient(-45deg, #000 0%, #fff 100%);
-}
-
-figure.card8 img {
     margin: -10px 0 0 -10px;
     max-width: none;
     width: -webkit-calc(100% + 10px);
@@ -770,12 +814,19 @@ figure.card8 img {
     backface-visibility: hidden;
 }
 
+figure.card8 {
+    background: -webkit-linear-gradient(-45deg, #000 0%, #fff 100%);
+    background: linear-gradient(-45deg, #000 0%, #fff 100%);
+}
+
+/* before figcaption and texts stylings */
 figure.card8 figcaption::before,
 figure.card8 p {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
 }
 
+/* before figcaption stylings */
 figure.card8 figcaption::before {
     position: absolute;
     right: -100px;
@@ -793,6 +844,7 @@ figure.card8 figcaption::before {
     transform-origin: 50% 50%;
 }
 
+/* image stylings on hover */
 figure.card8:hover img {
     opacity: 0.6;
     -webkit-transform: translate3d(0, 0, 0);
@@ -819,12 +871,14 @@ figure.card8 p {
     transform: translate3d(20px, 20px, 0);
 }
 
+/* before figcaption stylings on hover */
 figure.card8:hover figcaption::before {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
 
+/* translation hover effect on heading and texts */
 figure.card8:hover h2,
 figure.card8:hover p {
     opacity: 1;
@@ -833,6 +887,7 @@ figure.card8:hover p {
 }
 
 /* card9 */
+/* figcaption position */
 figure.card9 figcaption {
     position: absolute;
     top: 0;
@@ -845,12 +900,14 @@ figure.card9 {
     background: #030c17;
 }
 
+/* image stylings */
 figure.card9 img {
     opacity: 0.9;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
 
+/* before figcaption stylings */
 figure.card9 figcaption::before {
     position: absolute;
     top: 30px;
@@ -887,6 +944,7 @@ figure.card9:hover h2 {
     transform: scale(0.9);
 }
 
+/* before figcaption and paragraph stylings */
 figure.card9:hover figcaption::before,
 figure.card9:hover p {
     opacity: 1;
@@ -894,15 +952,18 @@ figure.card9:hover p {
     transform: scale3d(1, 1, 1);
 }
 
+/* hover effect on figcaption stylings */
 figure.card9:hover figcaption {
     background-color: rgba(58, 52, 42, 0);
 }
 
+/* image opacity on hover */
 figure.card9:hover img {
     opacity: 0.4;
 }
 
 /* card10 */
+/* figcaption position */
 figure.card10 figcaption {
     position: absolute;
     top: 0;
@@ -911,16 +972,19 @@ figure.card10 figcaption {
     height: 70%;
 }
 
+/* gradient effect on card */
 figure.card10 {
     background: -webkit-linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
     background: linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
 }
 
+/* image stylings */
 figure.card10 img {
     opacity: 0.9;
     max-width: 100.5%;
 }
 
+/* after figcaption, image and texts stylings */
 figure.card10 figcaption::after,
 figure.card10 img,
 figure.card10 p {
@@ -928,6 +992,7 @@ figure.card10 p {
     transition: opacity 0.35s, transform 0.35s;
 }
 
+/* after figcaption stylings */
 figure.card10 figcaption::after {
     position: absolute;
     top: 0;
@@ -944,6 +1009,7 @@ figure.card10 figcaption::after {
     transform-origin: 50% 50%;
 }
 
+/* scaling of heading and texts */
 figure.card10 h2,
 figure.card10 p {
     opacity: 1;
@@ -951,6 +1017,7 @@ figure.card10 p {
     transform: scale3d(0.8, 0.8, 1);
 }
 
+/* transition on texts */
 figure.card10 h2 {
     padding-top: 16%;
     -webkit-transition: -webkit-transform 0.35s;
@@ -964,18 +1031,21 @@ figure.card10 p {
     opacity: 0;
 }
 
+/* image stylings on hover */
 figure.card10:hover img {
     opacity: 0.7;
     -webkit-transform: scale3d(1.05, 1.05, 1);
     transform: scale3d(1.05, 1.05, 1);
 }
 
+/* after figcaption hover effect */
 figure.card10:hover figcaption::after {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
     transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
 }
 
+/* hovering effect on heading and texts */
 figure.card10:hover h2,
 figure.card10:hover p {
     opacity: 1;
@@ -985,6 +1055,7 @@ figure.card10:hover p {
 
 
 /* card11 */
+/* figcaption position */
 figure.card11 figcaption {
     position: absolute;
     top: 0;
@@ -997,6 +1068,7 @@ figure.card11 {
     background: #3498db;
 }
 
+/* image stylings */
 figure.card11 img {
     opacity: 0.95;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1005,6 +1077,7 @@ figure.card11 img {
     transform: scale3d(1.05, 1.05, 1);
 }
 
+/* before figcaption stylings */
 figure.card11 figcaption::before {
     position: absolute;
     top: 0;
@@ -1019,6 +1092,7 @@ figure.card11 figcaption::before {
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
 }
 
+/* texts positioning */
 figure.card11 p {
     position: absolute;
     right: 0;
@@ -1037,17 +1111,20 @@ figure.card11 h2 {
     text-align: left;
 }
 
+/* image stylings on hover*/
 figure.card11:hover img {
     opacity: 0.6;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
 
+/* before figcaption stylings on hover */
 figure.card11:hover figcaption::before {
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
 
+/* text transition on hover */
 figure.card11:hover p {
     opacity: 1;
     -webkit-transition-delay: 0.1s;
@@ -1055,6 +1132,7 @@ figure.card11:hover p {
 }
 
 /* card12 */
+/* figcaption position */
 figure.card12 figcaption {
     position: absolute;
     top: 0;
@@ -1063,23 +1141,27 @@ figure.card12 figcaption {
     height: 70%;
 }
 
+/* gradient effect on card */
 figure.card12 {
     background: -webkit-linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
     background: linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
 }
 
+/* image and texts stylings */
 figure.card12 img,
 figure.card12 p {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
 }
 
+/* image stylings on hover*/
 figure.card12:hover img {
     opacity: 0.1;
     -webkit-transform: scale3d(2, 2, 1);
     transform: scale3d(2, 2, 1);
 }
 
+/* heading transition */
 figure.card12 h2 {
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -1089,6 +1171,7 @@ figure.card12 h2 {
     transform-origin: 50% 100%;
 }
 
+/* texts transition and positioning */
 figure.card12 p {
     position: absolute;
     bottom: 0;
@@ -1105,6 +1188,7 @@ figure.card12 p {
     transform-origin: 50% -100%;
 }
 
+/* hovering effect on heading and texts */
 figure.card12:hover h2,
 figure.card12:hover p {
     opacity: 1;
