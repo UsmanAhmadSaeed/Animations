@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"); /* Font for the text */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+/* Complete screen cover  */
+.loaderWrapper {
+  background-color: #37acff;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+/* Div containing the cloud  */
+
+.cloudWrapper {
+  margin: 15% auto 0;
+  width: max-content;
+}
+
+/* The cloud  */
+#cloud {
+  display: flex;
+  width: 350px;
+  height: 120px;
+  z-index: 5;
+  background: #f2f9fe;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    color-stop(0.05, #f2f9fe),
+    to(#d6f0fd)
+  );
+  background: linear-gradient(#f2f9fe 5%, #d6f0fd 100%);
+  border-radius: 100px;
+  position: relative;
+  animation: hovering 1.5s infinite ease-in;
+}
+
+#cloud:after,
+#cloud:before {
+  content: "";
+  position: absolute;
+  background: #f2f9fe;
+  z-index: -1;
+}
+
+/* The top left corner of the cloud  */
+#cloud:after {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 50px;
+  border-radius: 100px;
+}
+
+/* The top right corner of the cloud  */
+#cloud:before {
+  width: 180px;
+  height: 180px;
+  top: -90px;
+  right: 50px;
+  border-radius: 200px;
+}
+/* Hovering animation of the cloud  */
+@keyframes hovering {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -5px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* Text inside the cloud  */
+#cloud span {
+  margin: 5% auto;
+  font-size: 2rem;
+  font-family: "Silkscreen", cursive;
+  color: #37acff;
+}
+/* Div containing raindrops */
+.container {
+  margin: 0 auto;
+  width: 30%;
+  height: 50vh;
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+/* Raindrop 1 */
+.rain:nth-of-type(1) {
+  --delay: 0.3s;
+  transform: translate(20%, 70%) scale(0.5);
+}
+/* Raindrop 2 */
+.rain:nth-of-type(2) {
+  --delay: 0.6s;
+  transform: translate(0%, 40%) scale(0.5);
+}
+/* Raindrop 3 */
+.rain:nth-of-type(3) {
+  --delay: 0.9s;
+  transform: translate(-30%, 50%) scale(0.5);
+}
+
+.rain {
+  --duration: 1s;
+  --delay: 1s;
+  transform: translate(10%, 10%) scale(0.9);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Raindrops  */
+.drop {
+  background-color: white;
+  width: 3px;
+  height: 100px;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 1.5px);
+  animation-name: fall;
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+/* Falling animation of the raindrop  */
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  45% {
+    transform: translateY(80%);
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
