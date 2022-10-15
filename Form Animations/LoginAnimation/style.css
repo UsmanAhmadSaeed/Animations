@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* Basic CSS for all types of elements in the HTML page */
 *
 {
 	margin: 0;
@@ -15,6 +16,7 @@ body
 	flex-direction: column;
 	background: #23242a;
 }
+/* Sign-in Box Structure */
 .box 
 {
 	position: relative;
@@ -24,6 +26,7 @@ body
 	border-radius: 8px;
 	overflow: hidden;
 }
+/* Positioning the sign-in box */
 .box::before 
 {
 	content: '';
@@ -51,7 +54,7 @@ body
 	animation: animate 6s linear infinite;
 	animation-delay: -3s;
 }
-/* Used for the animation for the side lines surrounding the box*/
+/* Used for the animation for the side lines surrounding the box */
 @keyframes animate 
 {
 	0%
@@ -81,12 +84,14 @@ h2
 	text-align: center;
 	letter-spacing: 0.1em;
 }
+/* positioning the input fields username & password */
 .inputBox 
 {
 	position: relative;
 	width: 300px;
 	margin-top: 35px;
 }
+/* CSS for input fields where the text is beign typed */
 .inputBox input 
 {
 	position: relative;
@@ -102,6 +107,7 @@ h2
 	transition: 0.5s;
 	z-index: 10;
 }
+/* when clicked the text box gets enlarged */
 .inputBox span 
 {
 	position: absolute;
@@ -113,6 +119,7 @@ h2
 	letter-spacing: 0.05em;
 	transition: 0.5s;
 }
+/* decreases the font size and move the text when clicked on input */
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span 
 {
@@ -120,6 +127,7 @@ h2
 	transform: translateX(0px) translateY(-34px);
 	font-size: 0.75em;
 }
+/* the blue boxand line below the username & password */
 .inputBox i 
 {
 	position: absolute;
@@ -134,6 +142,7 @@ h2
 	pointer-events: none;
 	z-index: 9;
 }
+/* when clicking the input fields set height of the blue box */
 .inputBox input:valid ~ i,
 .inputBox input:focus ~ i 
 {
@@ -144,6 +153,7 @@ h2
 	display: flex;
 	justify-content: space-between;
 }
+/* links color signup & forgot password */
 .links a 
 {
 	margin: 10px 0;
@@ -151,6 +161,7 @@ h2
 	color: #8f8f8f;
 	text-decoration: beige;
 }
+/* forgot password button change color on hover */
 .links a:hover, 
 .links a:nth-child(2)
 {
@@ -172,10 +183,12 @@ input[type="submit"]
 	margin:auto;
 	margin-top: 30px;
 }
+/* decrease opacity when clicking */
 input[type="submit"]:active 
 {
 	opacity: 0.8;
 }
+/* on hover change color */
 input[type="submit"]:hover 
 {
 	background: rgb(57,255,20);
