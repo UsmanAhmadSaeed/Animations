@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(bg.jpg);
+    background: url(./bg.jpg);
 }
 .container{
     background: #f5f5f5;
