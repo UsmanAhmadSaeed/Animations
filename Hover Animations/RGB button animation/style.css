@@ -1,10 +1,11 @@
+/* Styling for the whole document */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: consolas;
 }
-
+/* Styling for body */
 body{
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ body{
     background: #000;
 
 }
+/* Styling for the anchor tab */
 a{
     position: relative;
     width: 160px;
@@ -26,9 +28,9 @@ a{
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 
 }
-
+/* Styling before the anchor tag */
 a::before{
-    content: '';
+    content: ''; /*Empty content before anchor element*/
     position: absolute;
     top: 0;
     left: 0;
@@ -40,8 +42,9 @@ a::before{
     transition: 0.5s;
     animation: animate 20s linear infinite;
 }
+/* Styling after the anchor tag */
 a::after{
-    content: '';
+    content: '';/*Empty content before anchor element*/
     position: absolute;
     top: 0;
     left: 0;
@@ -54,9 +57,11 @@ a::after{
     transition: 0.5s;
     animation: animate 20s linear infinite;
 }
+/* Hovering effect on before and after element of anchor tag */
 a:hover::before,a:hover::after{
 opacity: 1;
 }
+/* Using the keyframe animate to provide animation */
 @keyframes animate{
     0%
     {
@@ -71,6 +76,7 @@ opacity: 1;
         background-position: 0 0;
     }
 }
+/* Styling for the span element */
 a span{
     position: absolute;
     display: block;
@@ -84,10 +90,11 @@ a span{
     transition: 0.5s;
     z-index: 1;
 }
-
+/* Styling on span when hovered on anchor for the text in the button */
 a:hover span{
     color: rgba(255,255,255,1);
 }
+/* Styling on a span when hovered on */
 a span::hover{
     content: '';
     position: absolute;
