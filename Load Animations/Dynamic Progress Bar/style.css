@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background: black;
+    font-family: 'Montserrat';
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.container p {
+    color: #51ff0d;
+    font-weight: 300;
+    position: absolute;
+    bottom: 50vh;
+    left: 42.5%;
+    font-size: 5vw;
+}
+
+.load-number {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    bottom: 24vh;
+    left: 39.5%;
+    font-size: 10vw;
+}
+
+.container .bar {
+    position: absolute;
+    bottom: 34.5vh;
+    left: 38%;
+    height: 3px;
+    width: 30%;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.container .bar .color {
+    /* position: absolute; */
+    bottom: 40%;
+    left: 41.5%;
+    height: 2px;
+    background-color: #51ff0d;
+    border-radius: 15px;
+    /* animation: advance 4s infinite linear; */
+}
+
+/* @keyframes advance {
+    0% {
+        width: 0%;
+    }
+    10% {
+        width: 20%;
+    }
+    20% {
+        width: 30%;
+    }
+    30% {
+        width: 40%;
+    }
+    50% {
+        width: 60%;
+    }
+    70% {
+        width: 80%;
+    }
+    90% {
+        width: 95%;
+    }
+    100% {
+        width: 100%;
+    }
+} */
