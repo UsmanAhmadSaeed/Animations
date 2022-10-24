@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buttons to Zoom Cards</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btns">
+            <a onclick="clicked(this)" data-open="card1"><div class="btn1"></div></a>
+            <a onclick="clicked(this)" data-open="card2"><div class="btn2"></div></a>
+            <a onclick="clicked(this)" data-open="card3"><div class="btn3"></div></a>
+            <a onclick="clicked(this)" data-open="card4"><div class="btn4"></div></a>
+        </div>
+
+        <div class="cards">
+            <div id="card1">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="./image.jpg" alt="image">
+                    </div>
+                    <div class="card-title">
+                        <b>Title</b>
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            <!-- recomended 35 words -->
+                            atque ad quidem doloribus tempora molestiae voluptatem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dignissimos, natus, quas quisquam illo ipsam maxime quo possimus minus quaerat placeat necessitatibus labore commodi ad, culpa consequatur optio alias non! Consectetur ea aliquam eos quibusdam!
+                        </p>
+                    </div>
+                </div>    
+            </div>
+
+            <div id="card2">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="./image.jpg" alt="image">
+                    </div>
+                    <div class="card-title">
+                        <b>Title</b>
+                    </div>
+                    <div class="card-text">
+                        <span style="text-align: center;">
+                            <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                                <li>item 4</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div> 
+            </div>
+
+            <div id="card3">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="./image.jpg" alt="image">
+                    </div>
+                    <div class="card-title">
+                        <b>Title</b>
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dignissimos, natus, quas quisquam illo ipsam maxime quo possimus minus quaerat placeat necessitatibus labore commodi ad, culpa consequatur optio alias non! Consectetur ea aliquam eos quibusdam!
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+            <div id="card4">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="./profile.png" alt="image">
+                    </div>
+                    <div class="card-text">
+                        <span>
+                            <a href="https://www.linkedin.com/in/mstatharv/" style="color: blue;">Linkdin</a>
+                            <a href="https://github.com/Mr-okey/Mr-okey" style="color: black;">Github</a>
+                            <a href="#" style="color:rgb(255, 0, 43);">Instagram
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>

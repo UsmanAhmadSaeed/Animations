@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+$bg:#222;
+$white:#fff;
+$gray:rgba(255,255,255,0.25);
+$cb: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$basic-transition: 350ms;
+$dark-blue:#203f70;
+$blue: #4f6e9e;
+$before-light: #b0b2c3;
+
+html, body{
+  margin:0;
+  background:$bg;
+  color:$white;
+	overflow:hidden;
+}
+.nav{
+  z-index:2;
+  position:fixed;
+  top:0;
+  left:0;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  height:100vh;
+  width:100%;
+  transition: all $basic-transition $cb, font-size 1ms;
+  .navsActivated{
+    transition-delay:$basic-transition + 100ms;
+    transition: all $basic-transition $cb, font-size 1ms;
+    transform:translateX(75vw);
+    opacity:0;
+  }
+  .bg{
+    opacity:0.8;
+    position:fixed;
+    background-image:url(https://res.cloudinary.com/devkosov/image/upload/v1579025656/menu-texture-1920_1_u8pg5r.jpg);
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    transition: opacity $basic-transition;
+    transition-delay:$basic-transition;
+  }
+  .bgActivated{
+    opacity:0;
+    transition: opacity $basic-transition;
+    transition-delay:$basic-transition;
+  }
+  .navs{
+    z-index:1;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    .navList{
+      display: inline-block;
+      color:$gray;
+      font-family:Fugaz One;
+      text-transform:uppercase;
+      text-decoration:none;
+      transition: all $basic-transition $cb, font-size 1ms;
+      &:hover{
+        cursor:pointer;
+        color:$white;
+        transition: all $basic-transition $cb, font-size 1ms;
+        transform:translateY(-10px);
+      }
+    }
+  }
+}
+.navActivated{
+  transition-delay:$basic-transition + 100ms;
+  transform:translateY(-100vh);
+}
+
+#home{
+  height:100vh;
+  background-image:url(https://res.cloudinary.com/devkosov/image/upload/c_scale,w_1920/v1579121597/gray-house-with-fireplace-surrounded-by-grass-under-white-731082_wcyvpr.jpg);
+  background-size:cover;
+  background-position:center;
+  transition: all $basic-transition $cb, font-size 1ms;
+  transition-delay:$basic-transition;
+  clip-path: inset(10% 10% 10% 10%);
+}
+#about{
+  height:100vh;
+  background-image:url(https://res.cloudinary.com/devkosov/image/upload/c_scale,w_1920/v1579022718/potted-succulent-plants-on-the-bookshelf-2098691_qdaxxo.jpg);
+  background-size:cover;
+  background-position:center;
+  transition: all $basic-transition $cb, font-size 1ms;
+  transition-delay:$basic-transition;
+  clip-path: inset(10% 10% 10% 10%);
+}
+#contact{
+  height:100vh;
+  background-image:url(https://res.cloudinary.com/devkosov/image/upload/c_scale,w_1920/v1579023059/woman-sitting-on-chair-using-smartphone-and-headphones-1846391_bsllyj.jpg);
+  background-size:cover;
+  background-position:center;
+  transition: all $basic-transition $cb, font-size 1ms;
+  transition-delay:$basic-transition;
+  clip-path: inset(10% 10% 10% 10%);
+}
+.imagesActivated{
+  clip-path: inset(0% 0% 0% 0%) !important;
+  transition: all $basic-transition $cb, font-size 1ms;
+  transition-delay:$basic-transition;
+}
+
+
+.navbar {
+  text-decoration:none;
+  .nav-link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 32px;
+    font-family:Fugaz one;
+    margin:10px 0 0 30px;
+    color: rgba(255,255,255,0.5);
+    padding:0 5px 0 5px;
+    -webkit-transition: all $basic-transition 150ms $cb;
+    -moz-transition: all $basic-transition 150ms $cb;
+    -o-transition: all $basic-transition 150ms $cb;
+    transition: all $basic-transition 150ms $cb;
+    .title-background {
+      z-index:-1;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      background: $before-light;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-transition: all $basic-transition 150ms $cb;
+      -moz-transition: all $basic-transition 150ms $cb;
+      -o-transition: all $basic-transition 150ms $cb;
+      transition: all $basic-transition 150ms $cb;
+    }
+    &:hover {
+      cursor:pointer;
+      color: $white;
+      -webkit-transition: all $basic-transition $cb;
+      -moz-transition: all $basic-transition $cb;
+      -o-transition: all $basic-transition $cb;
+      transition: all $basic-transition $cb;
+      .title-background {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transition: all $basic-transition $cb;
+        -moz-transition: all $basic-transition $cb;
+        -o-transition: all $basic-transition $cb;
+        transition: all $basic-transition $cb;
+        background: $blue;
+      }
+    }
+  }
+}
