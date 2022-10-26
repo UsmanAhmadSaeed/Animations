@@ -6,6 +6,8 @@ A list of animations currently in this collection is available at the end of thi
 
 ## Community Health Guidelines
 
+#### *If guidelines are not followed, PRs will be marked as spam without warning. Some examples include, commits and PRs without appropriate description, code without appropriate comments, using of prohibited frameworks etc.*
+
 [Code of Conduct](/docs/CODE_OF_CONDUCT.md)
 
 [Submitting A Question](/docs/SUPPORT.md)
