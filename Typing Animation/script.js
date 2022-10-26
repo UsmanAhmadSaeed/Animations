@@ -1,7 +1,17 @@
 //typing animation script
-var typed = new Typed(".typing", {
-    strings: ["Text-Typing-Animation.","CSS-Text-Typing.","Animations."],
-   typeSpeed: 100,
-   backSpeed: 60,
-   loop: true
-});
+const text = document.querySelector(".typing");
+
+const textLoad = () => {
+    setTimeout(() => {
+         text.textContent = "Typing-animation";
+    }, 0);
+    setTimeout(() => {
+        text.textContenr = "Text-Typing-Animation";
+    }, 40000);
+    setTimeout(() => {
+        text.textContenr = "CSS-Typing-Animation";
+    }, 80000);
+}
+
+textLoad();
+setInterval(textload, 12000);
