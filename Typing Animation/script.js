@@ -1,17 +1,17 @@
 //typing animation script
-const text = document.querySelector(".typing");
+const text = document.querySelector(".text-2");
 
 const textLoad = () => {
     setTimeout(() => {
          text.textContent = "Typing-animation";
     }, 0);
     setTimeout(() => {
-        text.textContenr = "Text-Typing-Animation";
-    }, 40000);
+        text.textContent = "Text-Typing-Animation";
+    }, 4000);
     setTimeout(() => {
-        text.textContenr = "CSS-Typing-Animation";
-    }, 80000);
+        text.textContent = "CSS-Typing-Animation";
+    }, 8000);
 }
 
 textLoad();
-setInterval(textload, 12000);
+setInterval(textLoad, 12000);
