@@ -6,6 +6,7 @@
 }
 body{
     background: url(./bg.jpg);
+    overflow:hidden;
 }
 .container{
     background: #f5f5f5;
@@ -30,3 +31,25 @@ body{
     color: crimson;
     text-transform: capitalize;
 }
+.text-center span:before{
+    content: "";
+    display:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:#010718;
+    border-left:2px solid crimson;
+    animation:animate 4s steps(12) infinite;
+}
+/*keyframes start*/
+
+@keyframes animate{
+    40%,60%{
+        left:100%;
+    }
+    100%{
+        left:0%;
+    }
+}
+        
