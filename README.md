@@ -35,6 +35,7 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 
 - [Flip Animation on Hover](https://animations.gq/Hover%20Animations/Flip%20Animation%20on%20Hover/index.html)
 - [Tilting Animation on Hover](https://animations.gq/Hover%20Animations/Tilting%20Animation%20on%20Hover/glassmorph.html)
+- [RGB button animation](https://udit9876gupta.github.io/Animations/)
 
 ### Load Animations
 
