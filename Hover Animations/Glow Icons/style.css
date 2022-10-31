@@ -1,3 +1,4 @@
+/* styling body element, for bg color, width/height and display flex for easier alignment */
 body{
     background: #fdaf43;
     width: 100vw;
@@ -7,14 +8,17 @@ body{
     justify-content: center;
     justify-items: center;
 }
+/* positioning ul absolute and display flex for easier alignment */
 ul{
     position: absolute;
     display: flex;
 }
+/* setting list style to none to remove bullets and margins to add spacing between icons */
 ul li{
     list-style: none;
     margin: 0 15px;
 }
+/* styling anchor element that contains icons, assigning colors, size, transition duration and positioning  */
 ul li a{
     position: relative;
     display: flex;
@@ -32,6 +36,7 @@ ul li a{
     color: aliceblue;
     transition: .45s;
 }
+/* clearing content before anchors' content aka icon, positioning and transition and animation setting */
 ul li a::before{
     content: "";
     position: absolute;
@@ -45,10 +50,12 @@ ul li a::before{
     transform: scale(.9);
     z-index: -1;
 }
+/* adding hover animation to blank content of anchor set above before it's original content, this defines the outer blurry shadow */
 ul li a:hover::before{
     transform: scale(1.1);
     box-shadow: 0 0 .9rem #055341;
 }
+/* adding shadows on hover to anchor */
 ul li a:hover{
     color: aqua;
     box-shadow: 0 0 .3rem aqua;
