@@ -1,12 +1,14 @@
 /* styling body element, for bg color, width/height and display flex for easier alignment */
 body{
-    background: #fdaf43;
+    background: #02031d;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    padding:0;
+    margin:0;
 }
 /* positioning ul absolute and display flex for easier alignment */
 ul{
