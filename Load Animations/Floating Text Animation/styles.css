@@ -1,0 +1,77 @@
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hovering animation */
+@keyframes hovering {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* Expanding Shadow Animation  */
+@keyframes expand {
+  0% {
+    width: 70%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+/* Loader wrapper  */
+.wrapper {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader container  */
+.b-animation {
+  width: 50%;
+}
+
+/* Loading Text  */
+.text {
+  width: 100%;
+  animation: hovering 2s infinite ease-in-out;
+  margin: 5% 0 0 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Anton';
+  letter-spacing: 3px;
+  color: brown;
+  -webkit-text-stroke: 0.03rem #000;
+}
+
+/* Shadow Div  */
+.b-animation div {
+  width: 50%;
+  margin: 0 auto;
+  height: 0.15rem;
+  background: brown;
+  color: brown;
+  /* border: 0.0.5px solid black; */
+  border-radius: 50%;
+  animation: expand 2s infinite ease-in-out;
+}
