@@ -33,8 +33,8 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 
 ### Hover Animations
 
-- [RGB button animation](ttps://animations.gq/Hover%20Animations/RGB%20button%20animation/index.html)
-- [Glow Icons](ttps://animations.gq/Hover%20Animations/Glow%20Icons/index.html)
+- [RGB button animation](https://animations.gq/Hover%20Animations/RGB%20button%20animation/index.html)
+- [Glow Icons](https://animations.gq/Hover%20Animations/Glow%20Icons/index.html)
 
 ### Load Animations
 
