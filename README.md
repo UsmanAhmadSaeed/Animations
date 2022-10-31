@@ -47,6 +47,7 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 - [Heartbeat Loader](https://animations.gq/Load%20Animations/Heartbeat%20Loader/index.html)
 - [Looping Circle](https://animations.gq/Load%20Animations/Looping%20Circle/index.html)
 - [Simple Loading Bar](https://animations.gq/Load%20Animations/Simple%20Loading%20Bar/index.html)
+- [Bean Eater Loader](https://animations.gq/Load%20Animations/Bean%20Eater/index.html)
 
 ### Form Animations
 
