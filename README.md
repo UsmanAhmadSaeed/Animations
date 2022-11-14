@@ -45,6 +45,7 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 - [Bouncing Circles](https://animations.gq/Load%20Animations/Bouncing%20Circles/index.html)
 - [Ghost Loading Animation](https://animations.gq/Load%20Animations/Ghost%20Loading%20Animation/index.html)
 - [Simple Loading Bar](https://animations.gq/Load%20Animations/Simple%20Loading%20Bar/index.html)
+- [Bean Eater Loader](https://animations.gq/Load%20Animations/Bean%20Eater/index.html)
 
 ### Form Animations
 
