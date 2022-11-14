@@ -33,8 +33,8 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 
 ### Hover Animations
 
-- [Flip Animation on Hover](https://animations.gq/Hover%20Animations/Flip%20Animation%20on%20Hover/index.html)
-- [Tilting Animation on Hover](https://animations.gq/Hover%20Animations/Tilting%20Animation%20on%20Hover/glassmorph.html)
+- [RGB button animation](https://animations.gq/Hover%20Animations/RGB%20button%20animation/index.html)
+- [Glow Icons](https://animations.gq/Hover%20Animations/Glow%20Icons/index.html)
 
 ### Load Animations
 
@@ -44,8 +44,6 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 - [Wires Pull SVG Loader](https://animations.gq/Load%20Animations/Wires%20pull%20SVG%20loader/index.html)
 - [Bouncing Circles](https://animations.gq/Load%20Animations/Bouncing%20Circles/index.html)
 - [Ghost Loading Animation](https://animations.gq/Load%20Animations/Ghost%20Loading%20Animation/index.html)
-- [Heartbeat Loader](https://animations.gq/Load%20Animations/Heartbeat%20Loader/index.html)
-- [Looping Circle](https://animations.gq/Load%20Animations/Looping%20Circle/index.html)
 - [Simple Loading Bar](https://animations.gq/Load%20Animations/Simple%20Loading%20Bar/index.html)
 - [Bean Eater Loader](https://animations.gq/Load%20Animations/Bean%20Eater/index.html)
 
@@ -57,3 +55,9 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 - [Outside Curve Navigation Menu](https://animations.gq/Menu%20Animations/Outside%20Curve%20Navigation%20Menu/index.html)
 - [Liquid Animation](https://animations.gq/Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
 - [Clipping Navigation Menu](https://animations.gq/Menu%20Animations/Clipping%20Navigation%20Menu/index.html)
+
+#### Filtered animations (to be improved or removed)
+- [Flip Animation on Hover](https://animations.gq/Filtering/Flip%20Animation%20on%20Hover/index.html)
+- [Heartbeat Loader](https://animations.gq/Filtering/Heartbeat%20Loader/index.html)
+- [Looping Circle](https://animations.gq/Filtering/Looping%20Circle/index.html)
+- [Tilting Animation on Hover](https://animations.gq/Filtering/Tilting%20Animation%20on%20Hover/glassmorph.html)
