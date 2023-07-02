@@ -21,6 +21,10 @@ body {
 }
 a {
     cursor: pointer;
+    font-size: 1.2rem;
+}
+a:hover {
+    text-transform: uppercase;
 }
 .container {
     max-width: var(--container-width);
@@ -75,6 +79,7 @@ a {
 .card-text {
     border-radius: 25px;
     font-size:var(--std-font-size);
+    text-align: justify;
 }
 
 /* expanded/shrink styling */
