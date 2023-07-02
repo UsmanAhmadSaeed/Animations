@@ -6,7 +6,7 @@ A list of animations currently in this collection is available at the end of thi
 
 ## Community Health Guidelines
 
-#### *If guidelines are not followed, PRs will be marked as spam without warning. Some examples include, commits and PRs without appropriate description, code without appropriate comments, using of prohibited frameworks etc.*
+#### _If guidelines are not followed, PRs will be marked as spam without warning. Some examples include, commits and PRs without appropriate description, code without appropriate comments, using of prohibited frameworks etc._
 
 [Code of Conduct](/docs/CODE_OF_CONDUCT.md)
 
@@ -26,10 +26,9 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 
 ### Card Animations
 
-- [Card](https://animations.gq/Card%20Animations/cards/card.html)
-- [Card1](https://animations.gq/Card%20Animations/cards/Card%201/card.html)
-- [Card Stack](https://animations.gq/Card%20Animations/cards_stack/card.html)
-
+- [Card](https://animations.gq/Card%20Animations/Buttons%20to%20zoom%20cards/index.html)
+- [Card1](https://animations.gq/Card%20Animations/Hover%20to%20animate%20cards/index.html)
+- [Card Stack](https://animations.gq/Card%20Animations/Info%20card%20stack%20carousel/card.html)
 
 ### Hover Animations
 
@@ -51,11 +50,13 @@ Help is needed in defining better guidelines, rules and creating a site to showc
 - [Login Person](https://animations.gq/Form%20Animations/Show%20Password/index.html)
 
 ### Menu Animations
+
 - [Outside Curve Navigation Menu](https://animations.gq/Menu%20Animations/Outside%20Curve%20Navigation%20Menu/index.html)
 - [Liquid Animation](https://animations.gq/Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
 - [Clipping Navigation Menu](https://animations.gq/Menu%20Animations/Clipping%20Navigation%20Menu/index.html)
 
 #### Filtered animations (to be improved or removed)
+
 - [Flip Animation on Hover](https://animations.gq/Filtering/Flip%20Animation%20on%20Hover/index.html)
 - [Heartbeat Loader](https://animations.gq/Filtering/Heartbeat%20Loader/index.html)
 - [Looping Circle](https://animations.gq/Filtering/Looping%20Circle/index.html)
