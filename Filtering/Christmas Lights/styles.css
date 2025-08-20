@@ -1,0 +1,94 @@
+body {
+  background: #000;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.wire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  margin-bottom: -25px;
+  position: relative;
+  z-index: 0;
+}
+
+.lights {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.lights span {
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Bulb colors */
+.violet { background: #EE82EE; }
+.indigo { background: #4F69C6; }
+.blue   { background: #0000FF; }
+.green  { background: #00FF00; }
+.yellow { background: #FDFF00; }
+.orange { background: #FF7A00; }
+.red    { background: #FF0000; }
+
+/* Remote control button */
+#switch {
+  background: #444;
+  color: white;
+  border: 3px solid #888;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 4rem;
+  box-shadow: 0 4px #222;
+  transition: all 0.3s ease;
+}
+
+#switch:hover {
+  background: #ff4444;
+  border-color: #ff7777;
+  box-shadow: 0 4px #600;
+}
+
+/* Glow animations */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 10px 10px var(--glow-color); transform: scale(1); }
+  50% { box-shadow: 0 0 3px 3px var(--glow-color); transform: scale(1.15); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px 8px var(--glow-color); }
+  50% { opacity: 0.2; box-shadow: none; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; box-shadow: none; }
+  25% { opacity: 1; box-shadow: 0 0 15px 12px var(--glow-color); }
+  75% { opacity: 0.3; box-shadow: 0 0 6px 3px var(--glow-color); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 15px 15px var(--glow-color); }
+  50% { box-shadow: 0 0 6px 5px var(--glow-color); }
+}
