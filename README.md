@@ -18,45 +18,54 @@ A list of animations currently in this collection is available at the end of thi
 
 Help is needed in defining better guidelines, rules and creating a site to showcase projects. Please feel free to contribute.
 
+---
+
 ## Animations List
 
 ### Click Animations
-
-- [Big Button](https://animations.gq/Click%20Animations/big-button/index.html)
+- [Big Button](./Click%20Animations/big-button/index.html)
 
 ### Card Animations
-
-- [Card](https://animations.gq/Card%20Animations/cards/card.html)
-- [Card1](https://animations.gq/Card%20Animations/cards/Card%201/card.html)
-- [Card Stack](https://animations.gq/Card%20Animations/cards_stack/card.html)
-
+- [Buttons to zoom cards](./Card%20Animations/Buttons%20to%20zoom%20cards/index.html)
+- [Hover to animate cards](./Card%20Animations/Hover%20to%20animate%20cards/index.html)
+- [Info card stack carousel](./Card%20Animations/Info%20card%20stack%20carousel/card.html)
 
 ### Hover Animations
-
-- [RGB button animation](https://animations.gq/Hover%20Animations/RGB%20button%20animation/index.html)
-- [Glow Icons](https://animations.gq/Hover%20Animations/Glow%20Icons/index.html)
+- [Glow Icons](./Hover%20Animations/Glow%20Icons/index.html)
+- [RGB button animation](./Hover%20Animations/RGB%20button%20animation/index.html)
 
 ### Load Animations
-
-- [Expanding Circle Loader](https://animations.gq/Load%20Animations/Expanding%20Circle%20Loader/index.html)
-- [Jumping Dots Loader](https://animations.gq/Load%20Animations/Jumping%20Dots%20Loader/index.html)
-- [Rotating Circle Loader Simple](https://animations.gq/Load%20Animations/Rotating%20Circle%20Loader%20Simple/index.html)
-- [Wires Pull SVG Loader](https://animations.gq/Load%20Animations/Wires%20pull%20SVG%20loader/index.html)
-- [Bouncing Circles](https://animations.gq/Load%20Animations/Bouncing%20Circles/index.html)
-- [Ghost Loading Animation](https://animations.gq/Load%20Animations/Ghost%20Loading%20Animation/index.html)
-- [Simple Loading Bar](https://animations.gq/Load%20Animations/Simple%20Loading%20Bar/index.html)
+- [Bouncing Circles](./Load%20Animations/Bouncing%20Circles/index.html)
+- [Circularly Rotating Boxes](./Load%20Animations/Circularly%20Rotating%20Boxes/index.html)
+- [Expanding Circle Loader](./Load%20Animations/Expanding%20Circle%20Loader/index.html)
+- [Floating Text Animation](./Load%20Animations/Floating%20Text%20Animation/index.html)
+- [Ghost Loading Animation](./Load%20Animations/Ghost%20Loading%20Animation/index.html)
+- [Jumping Dots Loader](./Load%20Animations/Jumping%20Dots%20Loader/index.html)
+- [Loading Circles](./Load%20Animations/Loading%20Circles/index.html)
+- [Rain](./Load%20Animations/Rain/index.html)
+- [Ring wave animation](./Load%20Animations/Ring%20wave%20animation/index.html)
+- [Rotating Circle Loader Simple](./Load%20Animations/Rotating%20Circle%20Loader%20Simple/index.html)
+- [Simple Loading Bar](./Load%20Animations/Simple%20Loading%20Bar/index.html)
+- [Wires pull SVG loader](./Load%20Animations/Wires%20pull%20SVG%20loader/index.html)
 
 ### Form Animations
-
-- [Login Person](https://animations.gq/Form%20Animations/Show%20Password/index.html)
+- [Login Animation](./Form%20Animations/LoginAnimation/index.html)
+- [Show Password](./Form%20Animations/Show%20Password/index.html)
 
 ### Menu Animations
-- [Outside Curve Navigation Menu](https://animations.gq/Menu%20Animations/Outside%20Curve%20Navigation%20Menu/index.html)
-- [Liquid Animation](https://animations.gq/Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
-- [Clipping Navigation Menu](https://animations.gq/Menu%20Animations/Clipping%20Navigation%20Menu/index.html)
+- [Clipping Navigation Menu](./Menu%20Animations/Clipping%20Navigation%20Menu/index.html)
+- [Liquid Navigation Menu](./Menu%20Animations/Liquid%20Navigation%20Menu/index.html)
+- [Outside Curve Navigation Menu](./Menu%20Animations/Outside%20Curve%20Navigation%20Menu/index.html)
 
-#### Filtered animations (to be improved or removed)
-- [Flip Animation on Hover](https://animations.gq/Filtering/Flip%20Animation%20on%20Hover/index.html)
-- [Heartbeat Loader](https://animations.gq/Filtering/Heartbeat%20Loader/index.html)
-- [Looping Circle](https://animations.gq/Filtering/Looping%20Circle/index.html)
-- [Tilting Animation on Hover](https://animations.gq/Filtering/Tilting%20Animation%20on%20Hover/glassmorph.html)
+### Filtering Animations
+- [Christmas Lights](./Filtering/Christmas%20Lights/index.html)
+- [Flip Animation on Hover](./Filtering/Flip%20Animation%20on%20Hover/index.html)
+- [Heartbeat Loader](./Filtering/Heartbeat%20Loader/index.html)
+- [Hover to invert color card (Card 1)](./Filtering/Hover%20to%20invert%20color%20card/Card%201/card.html)
+- [Hover to invert color card](./Filtering/Hover%20to%20invert%20color%20card/card.html)
+- [Looping Circle](./Filtering/Looping%20Circle/index.html)
+- [Rainbow Lights](./Filtering/Rainbow%20Lights/index.html)
+- [Tilting Animation on Hover](./Filtering/Tilting%20Animation%20on%20Hover/glassmorph.html)
+
+### Landing Page (WIP)
+- [Landing Page (WIP)](./Landing%20Page%20%28WIP%29/index.html)
