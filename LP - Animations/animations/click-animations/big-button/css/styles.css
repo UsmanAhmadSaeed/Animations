@@ -1,0 +1,120 @@
+body{
+  background-color:#234;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.wrapperButton{
+  font-size: 1rem; /* <-- Change wrapper font-size to resize the button */
+  width: fit-content;
+  margin: 15% auto;
+  position: relative;
+}
+.bigButton {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  background-color: #2f90ff;
+  height: 2.5em;
+  line-height: 2.5em;
+  position: relative;
+  top: 0;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  box-sizing: border-box;
+  padding: 0 .5em;
+  box-shadow: 
+              0 .03em 0 skyblue,
+              0 .15em 0 #005896,
+              0 .20em 0 #005896,
+              0 .25em 0 #005896,
+              0 .30em 0 #005896,
+              0 .35em 0 #005896,
+              0 .40em 0 #005896,
+              0 .45em 0 #005896,
+              0 .50em 0 #005896,
+              0 .55em 0 #005896,
+              0 .60em 0 #005896,
+              0 .65em 0 #005896,
+              0 .70em 0 #005896;
+              
+}
+.bigButton>span{
+  display: block;
+ transform: perspective(500px) rotateX(35deg);
+}
+.bigButton:hover{
+  color: #fff;
+  top: -.18em;
+  background-color: #2fccff;
+  box-shadow: 0 .03em 0 skyblue,
+              0 .15em 0 #0077ff,
+              0 .20em 0 #0077ff,
+              0 .25em 0 #0077ff,
+              0 .30em 0 #0077ff,
+              0 .35em 0 #0077ff,
+              0 .40em 0 #0077ff,
+              0 .45em 0 #0077ff,
+              0 .50em 0 #0077ff,
+              0 .55em 0 #0077ff,
+              0 .60em 0 #0077ff,
+              0 .65em 0 #0077ff,
+              0 .70em 0 #0077ff;
+}
+
+.bigButton::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  border-radius: 100%;
+  position: absolute;
+  top: .7em;
+  left: 0;
+  background-color: #005896;
+  visibility: hidden;
+  transition: all .3s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+.bigButton:hover::after{
+  top: .88em;
+  background-color: #0077ff;
+  visibility: visible;
+}
+.bigButton:active{
+  color:rgb(199, 184, 184);
+  transition: color 0s;
+  background-color: #3a94b3;
+  top: -.12em;
+}
+.bigButton:active::after{
+  top: .82em;
+  transition: top 0s;
+  visibility: visible;
+}
+
+.waveAnimation{
+  width: 50%;
+  height: 50%;
+  border: 2em solid #dbe5ff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  pointer-events: none;
+  z-index: -2;
+}
+
+@keyframes wave {
+  100%{
+    border: 2px solid #dbe5ff00;
+    width: 300%;
+    height: 300%;
+    top: -50%;
+    left: -100%;
+  }
+}
